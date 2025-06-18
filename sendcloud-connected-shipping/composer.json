@@ -1,0 +1,14 @@
+{
+  "name": "sendcloud/woocommerce",
+  "description": "Sendcloud WooCommerce Integration",
+  "type": "library",
+  "require": {
+    "php": ">=5.3",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "includes", "database"
+    ]
+  }
+}

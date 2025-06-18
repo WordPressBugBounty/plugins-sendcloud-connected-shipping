@@ -1,0 +1,16 @@
+*** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
+
+= 2025-05-26 - version 1.0.11 =
+* Changed sendcloud user creation logic
+
+= 2025-05-20 - version 1.0.10 =
+* Added agreement checkbox on plugin installation page
+
+= 2025-05-15 - version 1.0.9 =
+* Fixed issue with creating order with service point method when using block checkout
+
+= 2025-05-14 - version 1.0.8 =
+* Fixed carrier selection issue in WooCommerce admin panel & resolved deprecated dynamic property warnings.
+
+= 2025-04-09 - version 1.0.7 =
+* Integrate WooCommerce with an existing SendCloud account enabling service point delivery locations to be selected at the checkout.
