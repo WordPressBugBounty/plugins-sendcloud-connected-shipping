@@ -20,6 +20,11 @@ class SCCSP_Order_Repository {
 	 */
 	public function get_service_point_meta( $order_id ) {
 		$order = wc_get_order( $order_id );
+
+        if ( ! $order ) {
+            return null;
+        }
+
 		$data  = $order->get_meta( self::SERVICE_POINT_META_FIELD_NAME );
 		if ( ! $data ) {
 			return null;
@@ -37,6 +42,11 @@ class SCCSP_Order_Repository {
 	 */
 	public function save_service_point_meta( $order_id, $service_point ) {
 		$order = wc_get_order( $order_id );
+
+        if ( ! $order ) {
+            return;
+        }
+
 		$order->update_meta_data( self::SERVICE_POINT_META_FIELD_NAME, $service_point );
 		$order->save();
 	}

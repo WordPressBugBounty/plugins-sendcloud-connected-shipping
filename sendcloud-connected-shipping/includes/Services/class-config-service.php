@@ -84,7 +84,7 @@ class SCCSP_Config_Service {
 
         $carriers_array = $carriers ? json_decode($carriers, true) : [];
 
-        set_transient('sccsp_service_point_carriers', $carriers_array, 30 * MINUTE_IN_SECONDS);
+        set_transient('service_point_carriers', $carriers_array, 30 * MINUTE_IN_SECONDS);
 
         return $carriers_array;
     }

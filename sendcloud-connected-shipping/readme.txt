@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.11
+Version: 1.0.13
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, carriers, service point, delivery, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 6.8
-Stable tag: 1.0.11
+Stable tag: 1.0.13
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -90,6 +90,12 @@ e.g. A grocery store near your house or work may accept those packages.
 8. More than 2k 5-star reviews | Sendcloud
 
 == Changelog ==
+= 1.0.13 =
+* Fixed excessive DB queries
+
+= 1.0.12 =
+* Fixed woocommerce email template
+
 = 1.0.11 =
 * Changed sendcloud user creation logic
 
