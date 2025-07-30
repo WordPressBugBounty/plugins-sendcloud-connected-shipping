@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2025-07-29 - version 1.0.15 =
+* Change plugin description
+
 = 2025-07-23 - version 1.0.14 =
 * Fixed checkout translation
 

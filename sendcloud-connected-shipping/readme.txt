@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.14
+Version: 1.0.15
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
-Tags: shipping, carriers, service point, delivery, woocommerce
+Tags: shipping, shipping rates, order tracking, service points, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 6.8.2
-Stable tag: 1.0.14
+Stable tag: 1.0.15
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -18,44 +18,53 @@ Shipping packages has never been that easy!
 
 [youtube https://www.youtube.com/watch?v=0GUV5W0bNi0 ]
 
-= Sendcloud, the all-in-one shipping platform that helps you grow. =
+= Fast, automated shipping for WooCommerce: labels, tracking & returns in one platform. =
 
-Shipping shouldn’t slow you down. Sendcloud simplifies shipping—automating labels, tracking, and returns—while giving you smart insights and access to multiple carriers, all in one easy platform.
+Grow your business with the Sendcloud x WooCommerce integration. Connect your WooCommerce store with Sendcloud in seconds and automate your shipping workflow — from checkout to returns — all from one powerful platform. Join 25,000+ e-commerce businesses that grow with Sendcloud.
 
-With advanced analytics, benchmarks, and recommendations, <strong>Shipping Intelligence</strong> helps shape your ideal shipping strategy based on over a decade of logistics data. <strong>Support Automation</strong> centralizes claims and carrier communications, reducing manual tasks and enabling  proactive customer support.
+= Connect your WooCommerce store in seconds and streamline your entire fulfillment workflow in one platform. =
 
-The time is now —  turn shipping into your competitive advantage and every delivery an experience. Join 25,000+ e-commerce businesses that grow with Sendcloud.
+🛠 Set up in seconds: no code needed
 
-= Integrate your WooCommerce with 160+ international carriers =
-Your business is unique, and so are your shipping needs. That's why we've partnered with over 160 leading international carriers. Upload your own carrier contract or ship directly through Sendcloud's pre-negotiated shipping rates.
+🚚 160+ carriers, including DHL, UPS, Royal Mail & more
+
+📍 Customized delivery experience — let customers choose home delivery, pickup points, same-day, or next-day
+
+📦 Print labels, sync orders, manage returns — all in one place
+
+📬 Branded tracking emails & SMS notifications
+
+🔁 Easy, branded return portal
+
+📊 Track shipping and returns data in one dashboard
+
+= Why WooCommerce merchants choose Sendcloud: =
+
+* Automate your shipping process: Go beyond label printing — create powerful automations to reduce errors and scale faster.
+
+* Pick and pack more orders in less time: Minimize costly returns by ensuring the right order gets delivered every time.
+
+* Deliver the best post-purchase experience: Give your customers proactive tracking updates and a branded, hassle-free return portal.
+
+* One platform, full control: Everything you need to run your e-commerce shipping — built to integrate with your existing WooCommerce stack.
 
 = Supported carriers =
 DHL, DHL Express, DPD, UPS, FedEx, Hermes, Budbee, GLS, Royal Mail, PostNL, Bpost, SEUR, Correos, Correos Express, Colissimo, Mondial Relay, Colis Prive, Lettre Suivie, Chronopost, Deutsche Post, Trunkrs, Post Italiane, MRW, BRT, Cycloon, Delivengo, Parcelforce, and many more! We’re continuously integrating new carriers, so stay tuned for the latest updates and never miss out on any developments.
 
-= How does Sendcloud work? =
-Sendcloud simplifies your shipping by connecting your store to a wide selection of carriers. Once integrated, you can:
-• <strong>Offer flexible delivery options</strong>, from same-day to scheduled drop-offs, so customers can choose what works for them.
-• <strong>Optimize the post-purchase experience</strong> with branded tracking emails and pages that build customer loyalty.
-• <strong>Simplify shipping</strong> by activating multiple carriers and automating support tasks like tracking updates and returns.
-• Print shipping labels in bulk and <strong>skip the manual work.</strong>
-• <strong>Keep your customers in the loop</strong> with real-time updates, even when delays happen.
-• <strong>Make returns effortless</strong> with your own branded returns portal.
-• <strong>Drive growth</strong> with actionable insights from your shipping dashboard.
-
 = 3rd Party Services =
-Our plugin connects to an SendCloud API to synchronize order information. It synchronizes order information every time a new order is created in WooCommerce, or the sync button is clicked on Sendcloud panel page. ('https://panel.sendcloud.sc')
-This service is provided by "Sendcloud".
+Our plugin connects to a SendCloud API to synchronize order information. It synchronizes order information every time a new order is created in WooCommerce, or the sync button is clicked on the [Sendcloud panel page](https://panel.sendcloud.sc).
+This service is provided by “Sendcloud”.
 
 Please find the links to Terms of service and privacy policy for Sendcloud on following websites:
-• Terms of service - (https://www.sendcloud.com/terms-conditions/)
-• Privacy Policy - (https://www.sendcloud.com/privacy-policy)
+• [Terms of service](https://www.sendcloud.com/terms-conditions/)
+• [Privacy Policy](https://www.sendcloud.com/privacy-policy)
 
 == Installation ==
 
 = General instructions =
 
 1. Navigate to your WordPress store's dashboard and select Plugins > Add New Plugin. Search for 'Sendcloud connected shipping'.
-2. Activate the plugin via the 'Plugins' screen in WordPress or install it directly through the WordPress plugins screen (recommended method).
+2. Activate the plugin via the 'Plugins' screen in WordPress or install it directly through the WordPress plugins screen (recommended method). If you need more help getting set up, visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346704017-Self-hosted-Shop-Systems-Troubleshooting-Integration-Issues) for quick fixes and setup tips for self-hosted shop systems.
 3. Once connected to Sendcloud, navigate to Integrations > WooCommerce within the Sendcloud panel and enable service points.
 4. In WooCommerce, go to Settings > Shipping and enable 'Service Point Delivery' for the desired zones.
 
@@ -78,6 +87,9 @@ Yes. In order to connect, you must register for an account and then, follow the 
 Service Points are places that accept packages to be retrieved later by the customer.
 e.g. A grocery store near your house or work may accept those packages.
 
+= Need more help getting set up? =
+Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346704017-Self-hosted-Shop-Systems-Troubleshooting-Integration-Issues) for quick fixes and setup tips for self-hosted shop systems.
+
 == Screenshots ==
 
 1. Easy shipping automation | Sendcloud
@@ -90,6 +102,9 @@ e.g. A grocery store near your house or work may accept those packages.
 8. More than 2k 5-star reviews | Sendcloud
 
 == Changelog ==
+= 1.0.15 =
+* Change plugin description
+
 = 1.0.14 =
 * Fixed checkout translation
 
