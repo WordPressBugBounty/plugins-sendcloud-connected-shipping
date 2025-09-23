@@ -26,7 +26,7 @@ if (!defined('ABSPATH')) {
 }
 
 class SCCSP_Sendcloud {
-	const VERSION = '1.0.15';
+	const VERSION = '1.0.16';
 
 	const INTEGRATION_NAME = 'sendcloudshipping';
 	const BASE_API_URI = 'sendcloudshipping/v2';
@@ -182,7 +182,9 @@ class SCCSP_Sendcloud {
 		add_action( 'before_woocommerce_init', function () {
 			if ( class_exists( FeaturesUtil::class ) ) {
 				FeaturesUtil::declare_compatibility( 'custom_order_tables', $this->sendcloud_plugin_file, true );
-			}
+                FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', $this->sendcloud_plugin_file, true );
+
+            }
 		} );
 		$this->plugin_disable_handler->init();
 	}
