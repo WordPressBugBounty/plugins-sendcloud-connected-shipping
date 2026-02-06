@@ -26,8 +26,8 @@ if (!defined('ABSPATH')) {
 }
 
 class SCCSP_Sendcloud {
-	const VERSION = '1.0.16';
 
+	const VERSION = '1.0.22';
 	const INTEGRATION_NAME = 'sendcloudshipping';
 	const BASE_API_URI = 'sendcloudshipping/v2';
 
@@ -179,7 +179,8 @@ class SCCSP_Sendcloud {
 		}
 		add_action( 'init', array( $this, 'init_handler' ) );
 		add_action( 'plugins_loaded', array( $this, 'init_hooks_on_plugins_loaded' ) );
-		add_action( 'before_woocommerce_init', function () {
+        add_action( 'activated_plugin', array( $this, 'activation_redirect' ) );
+        add_action( 'before_woocommerce_init', function () {
 			if ( class_exists( FeaturesUtil::class ) ) {
 				FeaturesUtil::declare_compatibility( 'custom_order_tables', $this->sendcloud_plugin_file, true );
                 FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', $this->sendcloud_plugin_file, true );
@@ -209,6 +210,23 @@ class SCCSP_Sendcloud {
 		$this->init_service_point_handlers();
 		register_shutdown_function( array( $this, 'log_errors' ) );
 	}
+
+    /**
+     * Redirect to settings page upon activation
+     *
+     * @param $plugin
+     * @return void
+     */
+    function activation_redirect( $plugin ) {
+        if ( $plugin !== SC_PLUGIN_BASENAME ) {
+            return;
+        }
+
+        if ( isset( $_GET['action'] ) && $_GET['action'] === 'activate' ) {
+            wp_safe_redirect( admin_url( 'admin.php?page=sendcloud-connected-shipping' ) );
+            exit;
+        }
+    }
 
 	/**
 	 * Renders message about WooCommerce being deactivated

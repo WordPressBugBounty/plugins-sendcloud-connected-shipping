@@ -2,6 +2,8 @@
 
 namespace SCCSP\SendCloud\Connected\Shipping\HookHandlers;
 
+use SCCSP\SendCloud\Connected\Shipping\Repositories\SCCSP_Order_Repository;
+use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Logger;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Version_Utility;
 use WC_Product;
 
@@ -14,6 +16,19 @@ class SCCSP_Product_Handler {
 	static $country_of_origin_key = 'sc_country_of_origin';
 	static $ean_code_key = 'sc_ean_code';
 
+
+    /**
+     * @var \SCCSP\SendCloud\Connected\Shipping\Repositories\SCCSP_Order_Repository
+     */
+    private $order_repository;
+
+    /**
+     * Checkout_Handler constructor
+     */
+    public function __construct()
+    {
+        $this->order_repository = new SCCSP_Order_Repository();
+    }
 
 	/**
 	 * Init product hook handlers
@@ -29,7 +44,42 @@ class SCCSP_Product_Handler {
 			$this,
 			'add_international_shipping_fields'
 		) );
+        add_action( 'woocommerce_update_product', array(
+            $this,
+            'on_update_product'
+        ), 10, 2);
 	}
+
+    /**
+     * Checks if product ean field is changed and updates related orders
+     *
+     * @param $product_id
+     * @param $product
+     * @return void
+     */
+    public function on_update_product($product_id, $product){
+        $ean = SCCSP_Version_Utility::compare( '9.2', '<' )
+            ? $product->get_meta( self::$ean_code_key )
+            : $product->get_global_unique_id();;
+
+        $hash = md5(json_encode([$ean]));
+        $hashBefore = get_post_meta( $product_id, "productUpdateHash", true );
+
+        if ($hash !== $hashBefore) {
+            $order_ids = $this->order_repository->get_orders_by_product_id( $product_id );
+            add_post_meta($product_id, "productUpdateHash", $hash);
+
+            if (!$order_ids) {
+                return;
+            }
+
+            $this->order_repository->set_orders_updated_by_id($order_ids);
+            SCCSP_Logger::debug( sprintf('Orders (%s) updated after product (%d) EAN update',
+                implode(", ", $order_ids),
+                $product_id
+            ));
+        }
+    }
 
 	/**
 	 * Adds EAN code field on product details page

@@ -1,448 +1,1287 @@
-# Copyright (C) 2022 Sendcloud B.V.
-# This file is distributed under the same license as the Sendcloud | Smart Shipping Service plugin.
+# Copyright (C) 2025 Sendcloud B.V.
+# This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sendcloud | Smart Shipping Service 2.2.11\n"
+"Project-Id-Version: Sendcloud Shipping 1.0.22\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sendcloud-connected-shipping\n"
-"Last-Translator: Sendcloud\n"
-"Language-Team: shop-plugin-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-10-27T16:22:07+02:00\n"
+"POT-Creation-Date: 2025-12-23T10:42:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.5.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: sendcloud-shipping\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: sendcloud-connected-shipping\n"
 
 #. Plugin Name of the plugin
-msgid "Sendcloud | Smart Shipping Service"
+#: sendcloud-connected-shipping.php
+#: includes/class-sendcloud.php:259
+msgid "Sendcloud Shipping"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "https://www.sendcloud.com"
+#: sendcloud-connected-shipping.php
+msgid "https://wordpress.org/plugins/sendcloud-connected-shipping/"
 msgstr ""
 
 #. Description of the plugin
+#: sendcloud-connected-shipping.php
 msgid "Sendcloud plugin."
 msgstr ""
 
 #. Author of the plugin
+#: sendcloud-connected-shipping.php
 msgid "Sendcloud B.V."
 msgstr ""
 
-#: includes/Checkout/Api/class-checkout-api-service.php:84
-msgid "Invalid checkout payload."
+#. Author URI of the plugin
+#: sendcloud-connected-shipping.php
+msgid "https://www.sendcloud.com"
 msgstr ""
 
-#: includes/Checkout/Api/class-checkout-api-service.php:89
-msgid "Configuration updated"
+#: includes/Controllers/Api/class-authorization.php:90
+msgid "Consumer secret is invalid."
 msgstr ""
 
-#: includes/Checkout/Api/class-checkout-api-service.php:108
-#: includes/Integration/Api/class-integration-api-service.php:77
-msgid "Failed to delete checkout configuration."
+#: includes/Controllers/Api/class-authorization.php:112
+msgid "Consumer key is invalid."
 msgstr ""
 
-#: includes/Checkout/Api/class-checkout-api-service.php:113
-#: includes/Integration/Api/class-integration-api-service.php:82
-msgid "Configuration deleted"
+#: includes/Controllers/Api/class-authorization.php:155
+msgid "Invalid signature - oauth_signature is missing."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:84
-msgid "You can see all shipping zones, shipping methods and shipping costs on <a href=\"/wp-admin/admin.php?page=sendcloud-wc\">Sendcloud page</a>"
+#: includes/Controllers/Api/class-authorization.php:165
+msgid "Invalid signature - failed to sort parameters."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:199
-msgid "Enable Free Shipping"
+#: includes/Controllers/Api/class-authorization.php:181
+msgid "Invalid signature - signature method is invalid."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:204
-msgid "No"
+#: includes/Controllers/Api/class-authorization.php:195
+msgid "Invalid signature - provided signature does not match."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:205
-msgid "Yes"
+#: includes/Controllers/Api/class-authorization.php:218
+msgid "Invalid timestamp."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:210
-msgid "Free shipping requires..."
+#: includes/Controllers/Api/class-integration-controller.php:67
+#: includes/Controllers/Api/class-integration-controller.php:93
+#: includes/Controllers/Api/class-service-point-controller.php:56
+#: includes/Controllers/Api/class-service-point-controller.php:90
+msgid "Invalid payload."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:215
-msgid "A minimum order amount"
+#: includes/Controllers/Api/class-integration-controller.php:72
+msgid "Integration connected"
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:216
-msgid "A minimum order amount OR a coupon"
+#: includes/Controllers/Api/class-integration-controller.php:98
+msgid "Integration disconnected"
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:217
-msgid "A minimum order amount AND a coupon"
+#: includes/Controllers/Api/class-service-point-controller.php:61
+msgid "Service points enabled successfully."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:222
-msgid "Minimum Order Amount for Free Shipping"
+#: includes/Controllers/Api/class-service-point-controller.php:73
+msgid "Service points disabled successfully."
 msgstr ""
 
-#: includes/Checkout/Shipping/class-abstract-free-shipping-shipping-method.php:225
-msgid "If enabled, users will need to spend this amount to get free shipping."
+#: includes/Controllers/Api/class-service-point-controller.php:95
+msgid "Service points updated successfully."
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:56
-msgid "Delivered by {carrier}"
+#: includes/HookHandlers/class-product-handler.php:97
+msgid "EAN by Sendcloud"
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:57
-msgid "Clear search"
+#: includes/HookHandlers/class-product-handler.php:100
+msgid "Enter the EAN (European Article Number) for this product if you want to use scanning functionality provided by Pack&Go. EAN is a unique identifier used internationally to distinguish products."
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:58
-msgid "Close"
+#: includes/HookHandlers/class-product-handler.php:121
+msgid "HS Code by Sendcloud"
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:59
-msgid "Closed tomorrow"
+#: includes/HookHandlers/class-product-handler.php:124
+msgid "The HS code is the harmonized system code. If you want to ship your products internationally, you would need to enter these codes. These codes provide customs with information so that correct tariffs can be applied to the order."
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:60
-msgid "Closed"
+#: includes/HookHandlers/class-product-handler.php:133
+msgid "Country of origin by Sendcloud"
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:61
-msgid "Could not find any service points for this location."
+#: includes/HookHandlers/class-product-handler.php:136
+msgid "In most cases, the county where the product is manufactured."
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:62
-msgid "Day"
+#: includes/HookHandlers/class-product-handler.php:138
+msgid "None"
 msgstr ""
 
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:63
-msgid "Friday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:64
-msgid "Heads Up! The opening times of this service point have changed. If the opening times are still OK to you, click on select again."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:65
-msgid "Monday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:66
-msgid "One of the items in your cart is too large to be shipped to a service point."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:67
-msgid "Open tomorrow"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:68
-msgid "Opening times"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:69
-msgid "PO box number is required."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:70
-msgid "PO box number"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:71
-msgid "Post office box"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:72
-msgid "Saturday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:73
-msgid "Search for service point locations"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:74
-msgid "Search"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:75
-msgid "Select"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:76
-msgid "Selected"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:77
-msgid "Select location"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:78
-msgid "Sorry, this service point is no longer available."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:79
-msgid "Sorry, we were unable to record your selected service point. Please try again."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:80
-msgid "Sunday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:81
-msgid "Temporarily unavailable"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:82
-msgid "Thursday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:83
-msgid "Toggle list"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:84
-msgid "Toggle map"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:85
-msgid "Tuesday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:86
-msgid "We couldn’t display this delivery option. Choose another option to continue."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:87
-msgid "View opening times"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:88
-msgid "Wednesday"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-checkout-handler.php:117
-msgid "Please choose a delivery date."
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-nominated-day-shipping-method.php:28
-msgid "Nominated Day Delivery"
-msgstr ""
-
-#: includes/Checkout/Shipping/NominatedDay/class-nominated-day-shipping-method.php:29
-msgid "Let your buyer choose the delivery date. Configure the method in the Sendcloud Checkout panel."
-msgstr ""
-
-#: includes/Checkout/Shipping/SameDay/class-checkout-handler.php:62
-#: includes/Checkout/Shipping/Standard/class--checkout-handler.php:59
-msgid "Shipping method not available."
-msgstr ""
-
-#: includes/Checkout/Shipping/SameDay/class-same-day-shipping-method.php:24
-msgid "Same Day Delivery"
-msgstr ""
-
-#: includes/Checkout/Shipping/SameDay/class-same-day-shipping-method.php:25
-msgid "Offer same day delivery before a chosen cut-off time. Configure the method in the Sendcloud Checkout panel."
-msgstr ""
-
-#: includes/Checkout/Shipping/ServicePoint/class-checkout-handler.php:97
-#: includes/ServicePoint/class-checkout-handler.php:130
+#: includes/ServicePoint/Checkout/class-checkout-block-handler.php:109
+#: includes/ServicePoint/Checkout/class-checkout-handler.php:156
 msgid "Please choose a service point."
 msgstr ""
 
-#: includes/Checkout/Shipping/ServicePoint/class-service-point--shipping-method.php:28
-msgid "Service Point Delivery"
-msgstr ""
-
-#: includes/Checkout/Shipping/ServicePoint/class-service-point--shipping-method.php:29
-msgid "Deliver to a service point in the customer’s area."
-msgstr ""
-
-#: includes/Checkout/Shipping/Standard/class-standard-shipping-method.php:28
-msgid "Standard Delivery"
-msgstr ""
-
-#: includes/Checkout/Shipping/Standard/class-standard-shipping-method.php:29
-msgid "Set up next day, standard, international depending on carrier. Configure the method in the Sendcloud Checkout panel."
-msgstr ""
-
-#: includes/class-sendcloud.php:193
-msgid "Sendcloud"
-msgstr ""
-
-#: includes/Controllers/class-sendcloud-view-controller.php:90
-msgid "Standard"
-msgstr ""
-
-#: includes/Controllers/class-sendcloud-view-controller.php:91
-msgid "Nominated day"
-msgstr ""
-
-#: includes/Controllers/class-sendcloud-view-controller.php:92
-msgid "Service point"
-msgstr ""
-
-#: includes/Controllers/class-sendcloud-view-controller.php:93
-msgid "Same day"
-msgstr ""
-
-#: includes/ServicePoint/Api/class-sc-api-service-point.php:61
-msgid "No data specified to enable the plugin"
-msgstr ""
-
-#: includes/ServicePoint/Api/class-sc-api-service-point.php:65
-msgid "Plugin enabled"
-msgstr ""
-
-#: includes/ServicePoint/Api/class-sc-api-service-point.php:77
-msgid "Plugin disabled"
-msgstr ""
-
-#: includes/ServicePoint/class-checkout-handler.php:86
+#: includes/ServicePoint/Checkout/class-checkout-handler.php:100
 msgid "Select Service Point"
 msgstr ""
 
-#: includes/ServicePoint/Shipping/class-sc-service-point-shipping-method.php:29
-msgid "Service Point Delivery (legacy)"
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:169
+msgid "Enable Free Shipping"
 msgstr ""
 
-#: includes/ServicePoint/Shipping/class-sc-service-point-shipping-method.php:30
-msgid "Service point delivery is supported for legacy purposes, please set up Service point delivery via Dynamic Checkout in <a href=\"https://panel.sendcloud.sc/v2/checkout/configurations\" target=\"_blank\">Sendcloud</a>."
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:174
+msgid "No"
 msgstr ""
 
-#: includes/ServicePoint/Shipping/class-sc-service-point-shipping-method.php:60
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:175
+msgid "Yes"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:180
+msgid "Free shipping requires..."
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:185
+msgid "A minimum order amount"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:186
+msgid "A minimum order amount OR a coupon"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:187
+msgid "A minimum order amount AND a coupon"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:192
+msgid "Minimum Order Amount for Free Shipping"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:195
+msgid "If enabled, users will need to spend this amount to get free shipping."
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:202
+msgid "Coupons discounts"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:203
+msgid "Apply minimum order rule before coupon discount"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-abstract-flat-rate-free-shipping-method.php:205
+msgid "If checked, free shipping would be available based on pre-discount order amount."
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-service-point-shipping-method.php:33
+msgid "Service Point Delivery"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-service-point-shipping-method.php:34
+msgid "Deliver to a service point in the customer’s area. [Sendcloud]"
+msgstr ""
+
+#: includes/ServicePoint/Shipping/class-service-point-shipping-method.php:70
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:278
 msgid "Carrier Selection"
 msgstr ""
 
-#: includes/ServicePoint/Shipping/class-sc-service-point-shipping-method.php:64
-msgid "A comma separated list of your Sendcloud enabled carrier codes (e.g. ups, dpd, dhl), an empty value here will display all your Sendcloud enabled carriers"
+#: includes/ServicePoint/Shipping/class-service-point-shipping-method.php:74
+msgid "Select one or more carriers from your Sendcloud enabled list (e.g. UPS, DPD, DHL). An empty selection will display all your Sendcloud enabled carriers."
 msgstr ""
 
 #: resources/views/plugin/deactivation-notice.php:2
 msgid "Sendcloud | Smart Shipping Service plugin deactivated itself because WooCommerce is not available."
 msgstr ""
 
-#: resources/views/plugin/methods-disabled-notice.php:3
-msgid "Sendcloud | All Sendcloud shipping methods are disabled due to currency changes. Please go to Sendcloud and check shipping rates"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:36
-msgid "You haven't configured Checkout yet."
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:36
-msgid "Click here to go to Sendcloud."
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:56
-msgid "The connect button is disabled when permalinks are set to 'Plain'. Please change the permalinks configuration in order to connect."
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:79
-msgid "Sendcloud Integration"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:93
-msgid "Last published:"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:102
-msgid "Want to see your WooCommerce orders in the Sendcloud Panel?"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:110
-msgid "Connect"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:117
-msgid "Want to change any setting?"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page.php:121
-msgid "Go to Sendcloud"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/delivery-zone.php:28
-msgid "INTERNAL TITLE"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/delivery-zone.php:29
-msgid "PUBLIC TITLE"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/delivery-zone.php:30
-msgid "SHIPPING PRODUCT"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/delivery-zone.php:31
-msgid "RATES ENABLED"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/delivery-zone.php:32
-msgid "DELIVERY METHOD"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates-not-enabled-banner.php:11
-msgid "Shipping rates are not enabled. Please add pricing in the WooCommerce shipping method settings."
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:29
-msgid "WEIGHT CLASS"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:30
-msgid "SHIPPING RATE"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:32
-msgid "CARRIERS"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:34
-msgid "FREE SHIPPING ABOVE"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:35
-msgid "DEFAULT RATE"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:50
-msgid "Not configured"
-msgstr ""
-
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:72
-#: resources/views/wc-settings/sendcloud-page/shipping-rates.php:118
-msgid "Not enabled"
-msgstr ""
-
-#: resources/views/widgets/checkout/extend-admin-order-details.php:19
-#: resources/views/widgets/checkout/thank-you-widget.php:21
-#: resources/views/widgets/mail/widget.php:18
-msgid "Expected delivery date"
-msgstr ""
-
-#: resources/views/widgets/checkout/extend-admin-order-details.php:24
-#: resources/views/widgets/service-point-delivery/checkout/extend-admin-order-details.php:26
-msgid "You can't change the selected delivery date"
-msgstr ""
-
-#: resources/views/widgets/checkout/extend-admin-order-details.php:25
-#: resources/views/widgets/checkout/extend-order-details.php:18
-#: resources/views/widgets/service-point-delivery/checkout/extend-admin-order-details.php:27
-msgid "Non editable"
-msgstr ""
-
-#: resources/views/widgets/checkout/extend-order-details.php:11
-#: resources/views/widgets/checkout/service-point-legacy-thank-you-widget.php:13
-#: resources/views/widgets/mail/extend-order-created-mail.php:12
-#: resources/views/widgets/service-point-delivery/checkout/extend-admin-order-details.php:20
-#: resources/views/widgets/service-point-delivery/checkout/thank-you-widget.php:22
-#: resources/views/widgets/service-point-delivery/mail/widget.php:22
+#: resources/views/service-point/email-template.php:16
+#: resources/views/service-point/order-admin.php:15
+#: resources/views/service-point/order-confirmation-page.php:17
 msgid "Service Point Address"
 msgstr ""
 
-#: resources/views/widgets/checkout/extend-order-details.php:17
+#: resources/views/service-point/order-admin.php:21
 msgid "You can't change the selected Service Point"
+msgstr ""
+
+#: resources/views/service-point/order-admin.php:22
+msgid "Non editable"
+msgstr ""
+
+#. translators: Instruction heading for configuring product data
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:23
+msgid "Configure product data"
+msgstr ""
+
+#. translators: Description text explaining why to import all necessary item details into Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:33
+msgid "To ensure all necessary item details are imported into Sendcloud, helping you stay compliant with carrier requirements and customs documentation."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap <strong>EAN</strong> %3$s and %4$s wrap <strong>HS Code</strong> %5$s and %6$s wrap <strong>Country of Origin</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:51
+#, php-format
+msgid "Now that you’ve migrated to V2, new fields for %1$sEAN%2$s, %3$sHS Code%4$s, and %5$sCountry of Origin%6$s are available in WooCommerce. You no longer need to create custom attributes for these details."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap <strong>Note:</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:67
+#, php-format
+msgid "%1$sNote:%2$s"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:78
+msgid "If both the old custom attributes and the new fields are filled in, the new fields take priority."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:86
+msgid "We recommend using the new fields and removing the old custom attributes when possible to ensure accurate product data."
+msgstr ""
+
+#. translators: Section heading for setting EAN (European Article Number) codes
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:100
+msgid "Setting EAN Codes"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Products' in italics; %3$s and %4$s wrap 'All Products' in italics; %5$s and %6$s wrap 'Product Data > Inventory' in italics
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:112
+#, php-format
+msgid "In your WooCommerce dashboard, go to %1$sProducts%2$s > %3$sAll Products%4$s and select a product. Under %5$sProduct Data > Inventory%6$s, enter the EAN in:"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'EAN by Sendcloud' in bold; %3$s and %4$s wrap '9.2.' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:129
+#, php-format
+msgid "%1$sEAN by Sendcloud%2$s field for WooCommerce versions below %3$s9.2%4$s"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:140
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:159
+msgid "Screenshot of EAN Attribute"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'EAN' in bold; %3$s and %4$s wrap '9.2 and higher' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:148
+#, php-format
+msgid "WooCommerce’s native %1$sEAN%2$s field for versions %3$s9.2 and higher%4$s"
+msgstr ""
+
+#. translators: Section heading for configuring HS Codes and Country of Origin (used in international shipping)
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:168
+msgid "Setting HS Codes and Country of Origin (for international shipping)"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap the word 'Shipping' (tab name in WooCommerce Product Data) in bold
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:181
+#, php-format
+msgid "Enter the HS Code and Country of Origin under the %1$sShipping%2$s tab in Product Data."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-configure-product.php:192
+msgid "Screenshot of HS Code and Country Attribute"
+msgstr ""
+
+#. translators: Section heading for managing synchronisation settings between Sendcloud and WooCommerce
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:22
+msgid "Manage synchronisation settings between Sendcloud and WooCommerce"
+msgstr ""
+
+#. translators: Instruction line explaining adjustment of data flow between webshop and Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:32
+msgid "To adjust how data flows between your webshop and Sendcloud."
+msgstr ""
+
+#. translators: Instruction or label to enable webhook feedback
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:48
+msgid "Enable webhook feedback"
+msgstr ""
+
+#. translators: Instruction explaining that enabling the feature will send real-time updates from Sendcloud to WooCommerce
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:58
+msgid "To send real-time updates from Sendcloud to WooCommerce."
+msgstr ""
+
+#. translators: Instruction or label to create an API endpoint in WooCommerce/Sendcloud integration
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:71
+msgid "Create an API endpoint:"
+msgstr ""
+
+#. translators: Instruction explaining that an API endpoint is required to receive webhook updates from Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:79
+msgid "To receive webhook updates, you need an API endpoint that can handle incoming requests from Sendcloud."
+msgstr ""
+
+#. translators: Instruction or label to configure webhook feedback in Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:90
+msgid "Configure webhook feedback in Sendcloud:"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Settings' in italics; %3$s and %4$s wrap 'Integrations' as a clickable link; %5$s and %6$s wrap 'Configure' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:105
+#, php-format
+msgid "Go to your Sendcloud panel and navigate to %1$sSettings%2$s > %3$sIntegrations%4$s. Then click %5$sConfigure%6$s on your WooCommerce integration."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Webhook feedback enabled.' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:125
+#, php-format
+msgid "Select the checkbox for %1$sWebhook feedback enabled%2$s."
+msgstr ""
+
+#. translators: Instruction or label asking the user to enter the webhook URL
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:140
+msgid "Enter the webhook URL:"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Webhook URL field' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:149
+#, php-format
+msgid "Copy your webhook URL from your application and paste it into the %1$sWebhook URL field%2$s in Sendcloud."
+msgstr ""
+
+#. translators: Instruction to set up a webhook Signature Key if it is available
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:162
+msgid "If present, set up a webhook Signature Key:"
+msgstr ""
+
+#. translators: Explanation that this is a password used to sign all Sendcloud webhook requests
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:170
+msgid "This is a password used to sign all Sendcloud webhook requests. The key should:"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap '16 characters long' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:180
+#, php-format
+msgid "Be at least %1$s16 characters long%2$s"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'one number, one uppercase letter, one lowercase letter' in bold; %3$s and %4$s wrap 'one special character' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:194
+#, php-format
+msgid "Contain at least %1$sone number, one uppercase letter, one lowercase letter%2$s, and %3$sone special character%4$s"
+msgstr ""
+
+#. translators: Instruction or label to test your webhook
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:210
+msgid "Test your webhook:"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Test API webhook' button text in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:219
+#, php-format
+msgid "Click on the %1$sTest API webhook%2$s button to verify your setup. If your webhook is working correctly, you should start receiving payloads at your application."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:229
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:324
+msgid "Screenshot of Test Webhook"
+msgstr ""
+
+#. translators: Label for instruction to save the configuration
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:237
+msgid "Save"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Save' button text in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:246
+#, php-format
+msgid "Click %1$sSave%2$s to finalise the configuration."
+msgstr ""
+
+#. translators: Instruction or label to adjust the order status synchronization settings
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:262
+msgid "Adjust order status sync"
+msgstr ""
+
+#. translators: Instruction explaining how WooCommerce order statuses are updated when changes occur in Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:272
+msgid "To choose how WooCommerce order statuses are updated when changes occur in Sendcloud."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Settings' in italics; %3$s and %4$s wrap 'Integrations' as a clickable link; %5$s and %6$s wrap 'Configure' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:288
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:56
+#, php-format
+msgid "In your Sendcloud account, go to %1$sSettings%2$s > %3$sIntegrations%4$s, find your WooCommerce integration and click %5$sConfigure%6$s."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Feedback to the webshop' in bold; the following list items explain feedback options
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:308
+#, php-format
+msgid "In the %1$sFeedback to the webshop%2$s dropdown, select whether and how you would like your WooCommerce order statuses to be updated:"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:316
+msgid "Don’t send any feedback"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:317
+msgid "Change the parcels’ status to “sent” once the carrier scans the label"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:319
+msgid ""
+"Change the parcels’ status to “sent” once the label\n"
+"                                         is created"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:326
+msgid "The default selection is for the parcels' status to be set to \"sent\" once the label is created"
+msgstr ""
+
+#. translators: Section heading for filtering imported orders by their status
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:338
+msgid "Filter imported orders by status"
+msgstr ""
+
+#. translators: Short description explaining that this controls which orders are imported into Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:345
+msgid "To control which orders are imported into Sendcloud."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'pending, processing' in bold; %3$s and %4$s wrap 'on-hold' in bold; the rest of the text explains default pre-selected statuses and their purpose
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:356
+#, php-format
+msgid "When you first integrate WooCommerce with Sendcloud, three statuses are pre-selected by default: %1$spending, processing%2$s, and %3$son-hold%4$s. This ensures that completed or cancelled orders are not imported immediately. The pre-selection helps you focus on orders that are ready to be processed."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Important:' in bold; %3$s and %4$s wrap 'pending, processing, on-hold, completed, etc.' in italics; %5$s and %6$s wrap 'Custom order statuses' as a clickable link; the rest of the text explains limitations of order status filtering
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:373
+#, php-format
+msgid ""
+"%1$sImportant:%2$s Order status filtering currently only works with the default WooCommerce statuses (e.g., %3$spending, processing, on-hold, completed, etc.%4$s). %5$sCustom order statuses%6$s are not supported at this time. If you’re using a plugin that adds custom statuses,\n"
+"                                     those orders will not be imported into Sendcloud."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Settings' in italics; %3$s and %4$s wrap 'Integrations' as a clickable link; %5$s and %6$s wrap 'WooCommerce.' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:393
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:491
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:57
+#, php-format
+msgid "In your Sendcloud account, go to %1$sSettings%2$s > %3$sIntegrations%4$s > %5$sWooCommerce.%6$s"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Select' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:413
+#, php-format
+msgid "%1$sSelect%2$s the additional order statuses you want to include in your filter."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:423
+msgid "Screenshot of Order Status Filter"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Save' button text in bold; the rest explains that Sendcloud will import orders with newly selected statuses
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:431
+#, php-format
+msgid "Click %1$sSave%2$s. Once saved, Sendcloud will automatically import orders with the newly selected statuses during future imports."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Important:' in bold; %3$s and %4$s wrap 'last 30 days' in bold; %5$s and %6$s wrap 'customer support' as a clickable link; %7$s and %8$s wrap 'CSV file' as a clickable link; the rest of the text explains order import behavior
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:448
+#, php-format
+msgid ""
+"%1$sImportant:%2$s When you modify your status filter, Sendcloud automatically imports orders from the %3$slast 30 days%4$s that match the new filter criteria. Orders older than 30 days will not be imported. If you need to retrieve older orders, you can either contact\n"
+"                                                     our %5$scustomer support%6$s to manually trigger\n"
+"                                                     the import, or upload the orders using a %7$sCSV file%8$s."
+msgstr ""
+
+#. translators: Section heading for enabling or disabling parcel weight import
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:470
+msgid "Enable/disable parcel weight import"
+msgstr ""
+
+#. translators: Short description explaining that this controls importing parcel weights from WooCommerce or assigning via Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:477
+msgid "To import exact parcel weights from WooCommerce or assign weights through Sendcloud."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Import the parcels’ weight' in bold; the text explains choosing whether to import parcel weights from WooCommerce
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:513
+#, php-format
+msgid "Once on the Integration’s configuration page, check or uncheck %1$sImport the parcels’ weight%2$s to choose whether to import weights from your webshop."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Note:' in bold; %3$s and %4$s wrap 'kg' in bold; %5$s and %6$s wrap 'g' in bold; the rest explains that only kg and g units are supported
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:528
+#, php-format
+msgid "%1$sNote:%2$s Sendcloud currently only supports weights in %3$skg%4$s and %5$sg%6$s. Therefore, if you want to import weights, please make sure they are in one of these units. The weight is processed in kg once the order is imported in Sendcloud."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:541
+msgid "Screenshot of Import Status Weight"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Save' button text in bold
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:549
+#, php-format
+msgid "Click %1$sSave%2$s."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'not' in italics; %3$s and %4$s wrap 'default weight' in italics; %5$s and %6$s wrap 'different weights' in italics; the rest explains assigning weights if not imported from the webshop
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:564
+#, php-format
+msgid "If you chose %1$snot%2$s to import weights from your webshop (checkbox unticked), you can assign weights in Sendcloud. You can either: set a %3$sdefault weight%4$s for all items, or assign %5$sdifferent weights%6$s using Shipping Rules."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'this Help Center article' as a clickable link
+#: resources/views/wc-settings/dashboard/sendcloud-manage-synchronisation.php:577
+#, php-format
+msgid "Learn how in %1$sthis Help Center article%2$s"
+msgstr ""
+
+#. translators: Section heading for sending tracking notifications from Sendcloud
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:24
+msgid "Send tracking notifications from Sendcloud"
+msgstr ""
+
+#. translators: Short description explaining that this provides customers with real-time tracking updates and shipment details
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:31
+msgid "To provide your customers with real-time tracking updates and detailed shipment information."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Sendcloud Tracking' as a clickable link; the text explains that this article helps set up tracking updates
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:43
+#, php-format
+msgid "Set up your tracking updates by following this article: %1$sSendcloud Tracking%2$s"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Settings' in italics; %3$s and %4$s wrap 'Integrations' as a clickable link; %5$s and %6$s wrap 'Configure.' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:56
+#, php-format
+msgid "In your Sendcloud account, go to %1$sSettings%2$s > %3$sIntegrations%4$s, find your WooCommerce integration and click %5$sConfigure.%6$s"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:73
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:73
+msgid "Screenshot of Wordpress Integration"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Allow Sendcloud to send tracking updates to customers.' in bold
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:81
+#, php-format
+msgid "Tick the checkbox that says: %1$sAllow Sendcloud to send tracking updates to customers.%2$s"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-send-tracking.php:91
+msgid "Screenshot of Update Tracking"
+msgstr ""
+
+#. translators: Step for testing the Sendcloud integration
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:26
+msgid "Test the integration"
+msgstr ""
+
+#. translators: Description for testing the Sendcloud integration
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:33
+msgid "To confirm that Sendcloud and your webshop are syncing properly."
+msgstr ""
+
+#. translators: PLace a test order
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:47
+msgid "Place a test order in your webshop."
+msgstr ""
+
+#. translators: %1$s and %2$s = <a href="link-to-orders">Orders</a> %3$s and %4$s = <strong>Unstamped Letter</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:61
+#, php-format
+msgid "In your Sendcloud account, go to Shipping > %1$sOrders%2$s. Find the test order, select %3$sUnstamped Letter%4$s as the shipping method (to avoid charges), and create the label."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:74
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:98
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:118
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:185
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:227
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:272
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:296
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:215
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:33
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:87
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:237
+msgid "Screenshot of WooCommerce Shipping Settings"
+msgstr ""
+
+#. translators: %1$s and %2$s = <i>WooCommerce</i> %3$s and %4$s = <a href="link-to-orders">Orders</a> %5$s and %6$s = <strong>Completed</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:86
+#, php-format
+msgid "Verify that the order status in WooCommerce (%1$sWooCommerce%2$s > %3$sOrders%4$s) has updated to %5$sCompleted%6$s."
+msgstr ""
+
+#. translators: %1$s and %2$s = <strong>'Order notes'</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:108
+#, php-format
+msgid "Also in WooCommerce’s Orders section, open the order and check the %1$s‘Order notes’%2$s panel on the right. Tracking details should appear here."
+msgstr ""
+
+#. translators: If the order status updated
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:127
+msgid "If the order status updated correctly and tracking details appear"
+msgstr ""
+
+#. translators: You can now disconnect and delete the old integration
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:137
+msgid ""
+"You can now disconnect and delete the old integration. Remember to remove it from both\n"
+"                         Sendcloud and WooCommerce. Here’s how:"
+msgstr ""
+
+#. translators: Disconnect WooCommerce
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:151
+msgid "Disconnect WooCommerce V1 in Sendcloud:"
+msgstr ""
+
+#. translators: %1$s and %2$s = <i>Settings</i> %3$s and %4$s = <a>Integrations</a> link %5$s and %6$s = <strong>Disconnect</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:166
+#, php-format
+msgid ""
+"In your Sendcloud account, go to %1$sSettings%2$s > %3$sIntegrations%4$s, \n"
+"                                    find your old WooCommerce integration (the one without the “V2”) and click %5$sDisconnect%6$s."
+msgstr ""
+
+#. translators: Delete the old Sendcloud plugin
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:194
+msgid "Delete the old Sendcloud plugin in WooCommerce:"
+msgstr ""
+
+#. translators: %1$s and %2$s = <i>Plugins</i> %3$s and %4$s = <a><i>Installed Plugins</i></a> link %5$s and %6$s = <a><i>“Sendcloud | Smart Shipping Service”</i></a> plugin name (quotes included) %7$s and %8$s = <strong>Deactivate</strong> %9$s and %10$s = <strong>Delete</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:211
+#, php-format
+msgid ""
+"In your WooCommerce admin panel, go to %1$sPlugins%2$s > %3$sInstalled Plugins%4$s, \n"
+"                                    find the %5$s“Sendcloud | Smart Shipping Service”%6$s plugin, click %7$sDeactivate%8$s and then %9$sDelete%10$s."
+msgstr ""
+
+#. translators: If the order status didn’t update
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:236
+msgid "If the order status didn’t update and tracking details do not appear"
+msgstr ""
+
+#. translators: %1$s and %2$s = <i>Settings</i> %3$s and %4$s = <a href="link-to-integrations">Integrations</a> %5$s and %6$s = <strong>WooCommerce V2</strong> %7$s and %8$s = <strong>‘Change the parcels’ status to “sent” once the label is created’</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:253
+#, php-format
+msgid "In your Sendcloud account, in %1$sSettings%2$s > %3$sIntegrations%4$s > %5$sWooCommerce V2%6$s, make sure the ‘Feedback to the webshop’ dropdown is set to: %7$s‘Change the parcels’ status to “sent” once the label is created’%8$s."
+msgstr ""
+
+#. translators: %1$s and %2$s = <a href="link-to-users">Users</a> %3$s and %4$s = <strong>Shop manager</strong> %5$s and %6$s = <strong>Read/Write permissions</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:284
+#, php-format
+msgid "In your WooCommerce admin panel, in %1$sUsers%2$s, check that the Sendcloud user role is set to %3$sShop manager%4$s. Also make sure your Sendcloud API keys have %5$sRead/Write permissions%6$s."
+msgstr ""
+
+#. translators: %1$s and %2$s = <a href="link-to-users">Users</a> %3$s and %4$s = <strong>Shop manager</strong> %5$s and %6$s = <strong>Read/Write permissions</strong>
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:308
+#, php-format
+msgid "Check whether your server configuration allows %1$sPUT%2$s requests for the REST API. Sendcloud updates orders using %3$sPUT%4$s."
+msgstr ""
+
+#. translators: Instruction to open the .htaccess file
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:322
+#, php-format
+msgid "Open your %1$s.htaccess%2$s file (located in your %3$spublic_html%4$s folder)."
+msgstr ""
+
+#. translators: Instruction to look for a block in .htaccess
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:334
+msgid "Look for a block similar to:"
+msgstr ""
+
+#. translators: Ensure PUT is included
+#: resources/views/wc-settings/dashboard/sendcloud-test-integration.php:352
+#, php-format
+msgid "Ensure that %1$s‘PUT’%2$s is included:"
+msgstr ""
+
+#. translators: Title or instruction to migrate the Service Point delivery configuration
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:22
+msgid "Migrate your Service Point delivery configuration"
+msgstr ""
+
+#. translators: Instruction to copy and activate Service Point delivery methods from WooCommerce V1 integration
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:31
+msgid "To copy and activate the Service Point delivery methods from your WooCommerce V1 integration"
+msgstr ""
+
+#. translators: Step A: Verifying your Service Point delivery settings
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:44
+msgid "Step A: Verifying your Service Point delivery settings"
+msgstr ""
+
+#. translators: %1$s and %2$s = <strong>enabled</strong>
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:78
+#, php-format
+msgid "Make sure service points are %1$senabled%2$s."
+msgstr ""
+
+#. translators: %1$s and %2$s = <strong>carriers</strong> %3$s and %4$s = <strong>selected</strong>
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:93
+#, php-format
+msgid "Ensure that %1$scarriers%2$s supporting service point delivery are %3$sselected%4$s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:107
+msgid "Migrate Service Points"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap WooCommerce > Settings in italics; %3$s and %4$s wrap the Shipping link
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:132
+#, php-format
+msgid "Navigate to %1$sWooCommerce > Settings%2$s > %3$sShipping%4$s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:152
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-migrate.php:163
+msgid "Screenshot of Migrated Shipping"
+msgstr ""
+
+#. translators: Heading for the setup step where a merchant configures service point delivery
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:22
+msgid "Set up Service Point delivery"
+msgstr ""
+
+#. translators: Description text explaining why to configure service point delivery
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:28
+msgid "To offer your customers the option to pick up their parcels from a local service point."
+msgstr ""
+
+#. translators: Step A: Activating Service Point
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:41
+msgid "Step A: Activating Service Point delivery in Sendcloud"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Service Point delivery options' in bold; %3$s and %4$s wrap 'carriers' in bold; the rest explains enabling the switch and selecting carriers for this delivery type
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:84
+#, php-format
+msgid "Activate the switch to provide %1$sService Point delivery options%2$s and tick the %3$scarriers%4$s you want to use for this type of delivery."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:95
+msgid "Screenshot of Service Points"
+msgstr ""
+
+#. translators: %1$s and %2$s wrap 'Save' button text in bold
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:103
+#, php-format
+msgid "Click %1$sSave.%2$s"
+msgstr ""
+
+#. translators: Instruction or label to enable checking dimensions
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:119
+msgid "Enable checking dimensions"
+msgstr ""
+
+#. translators: Explains that enabling the feature helps prevent parcel rejection due to size restrictions. Applies only to PostNL and DHL.
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:129
+msgid "To prevent parcel rejection due to size. Only for PostNL and DHL."
+msgstr ""
+
+#. translators: %1$s = italic "Settings", %2$s = link "Integrations", %3$s = bold "WooCommerce", %4$s = bold "Service point check dimensions", %5$s = bold "only", %6$s = bold "DHL", %7$s = bold "PostNL"
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:142
+#, php-format
+msgid "Also in %1$s > %2$s > %3$s, tick the box as shown below: %4$s. We recommend %5$s selecting this box if you are shipping with %6$s and/or %7$s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:146
+msgid "Settings"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:150
+msgid "Integrations"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:151
+msgid "WooCommerce"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:152
+msgid "Service point check dimensions"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:153
+msgid "only"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:154
+msgid "DHL"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:155
+msgid "PostNL"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:168
+msgid "Screenshot of Service Point Dimensions"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:177
+msgid "Screenshot of Product Dimensions"
+msgstr ""
+
+#. translators: Step B: Configuring Service Point in WooCommerce
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:192
+msgid "Step B: Configuring Service Point delivery in WooCommerce"
+msgstr ""
+
+#. translators: %1$s = WooCommerce > Settings > (emphasized), %2$s = Shipping link, %3$s = Add zone in bold
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:204
+#, php-format
+msgid "In your WooCommerce admin panel, navigate to %1$s %2$s and %3$s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:205
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:23
+msgid "WooCommerce > Settings >"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:207
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:25
+msgid "Shipping"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:209
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:27
+msgid "Add zone"
+msgstr ""
+
+#. translators: %s is the "Add shipping method" text in bold
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:223
+#, php-format
+msgid "Click %s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:224
+msgid "Add shipping method"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:231
+msgid "Screenshot of WooCommerce Shipping Zone"
+msgstr ""
+
+#. translators: %1$s = "Service Point Delivery" in bold, %2$s = "[Sendcloud]" in bold, %3$s = "Continue" in bold
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:239
+#, php-format
+msgid "Select the %1$s method that explicitly includes %2$s in its description. Then, click %3$s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:243
+msgid "\"Service Point Delivery\""
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:244
+msgid "\"[Sendcloud]\""
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:245
+msgid "Continue"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:251
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:285
+msgid "Screenshot of Service Point Delivery Method"
+msgstr ""
+
+#. translators: %1$s = "method name" in bold, %2$s = example method in italic
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:258
+#, php-format
+msgid "Enter a %1$s for your shipping method to be displayed on your checkout page (such as %2$s) and add a shipping cost."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:262
+msgid "method name"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:263
+msgid "\"Delivery to service point\""
+msgstr ""
+
+#. translators: Shown in the settings description for the Carrier Selection field
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:273
+#, php-format
+msgid ""
+"In the %1$s field, you’ll see the carriers you activated in Sendcloud for this type of\n"
+"                         delivery. When you’re done, click %2$s."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/service-point/sendcloud-setup.php:279
+msgid "Create and save"
+msgstr ""
+
+#. translators: %1$s = HTML "WooCommerce > Settings >", %2$s = HTML link to Shipping, %3$s = bold "Add shipping zone"
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:19
+#, php-format
+msgid "From the sidebar menu in your WooCommerce dashboard, go to %1$s %2$s and then click %3$s."
+msgstr ""
+
+#. translators: Instruction to give shipping zone a name, select regions, and add shipping methods
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:41
+msgid "Give your shipping zone a name, select the regions you want to include, and add your shipping methods."
+msgstr ""
+
+#. translators: Instruction on pricing methods
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:52
+msgid "When you add a shipping method, you'll have the option to decide from the following pricing methods"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:59
+msgid "Fixed rate"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:60
+msgid "Set a unique delivery fee"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:63
+msgid "Free delivery"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:64
+msgid "Grant a free delivery to your customers"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:67
+msgid "Local pickup"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:68
+msgid "Customers will pick up the order themselves"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:77
+#, php-format
+msgid "Once the shipping method is added, click on %s to change its name and add rates:"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:81
+msgid "Edit"
+msgstr ""
+
+#. translators: Instruction linking to WooCommerce documentation about shipping classes
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:95
+#, php-format
+msgid "For more information about adding rates and shipping classes in WooCommerce, see the following article: %s"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-add-shipping-zones.php:97
+msgid "Product Shipping Classes - WooCommerce."
+msgstr ""
+
+#. translators: %1$s and %2$s = <strong>Note:</strong> %3$s = <i>shipping zones</i> %4$s = <i>methods</i> %5$s = <i>rates</i> %6$s = <i>DHL Home delivery</i>
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:26
+#, php-format
+msgid "%1$sNote:%2$s If you’ve already added %3$s, %4$s, and %5$s in WooCommerce, these remained intact after migrating. However, you might need to set up some or all of your shipping rules again so your WooCommerce shipping methods (the options customers select at checkout) are linked to the real carrier services (for example, %6$s)."
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:31
+msgid "shipping zones"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:32
+msgid "methods"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:33
+msgid "rates"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:34
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:85
+msgid "DHL Home delivery"
+msgstr ""
+
+#. translators: Add shipping zones
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:45
+msgid "Add shipping zones, methods and rates"
+msgstr ""
+
+#. translators: Instruction explaining that enabling the feature will send real-time updates from Sendcloud to WooCommerce
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-migrate.php:55
+msgid "In case you haven’t done so yet or want to add more or change the ones you have."
+msgstr ""
+
+#. translators: Heading for the setup step where a merchant adds shipping zones and rates
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:24
+msgid "Set up shipping methods and rules"
+msgstr ""
+
+#. translators: Description text explaining why to configure shipping zones and rates
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:31
+msgid "To deliver orders using the right method and rate based on the customer’s location and other conditions."
+msgstr ""
+
+#. translators: (Re)setting your shipping rules
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:47
+msgid "(Re)setting your shipping rules"
+msgstr ""
+
+#. translators: Step A: Adding shipping zones
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:57
+msgid "Step A: Adding shipping zones, methods and rates in WooCommerce"
+msgstr ""
+
+#. translators: Step B: Setting up shipping rules in Sendcloud
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:69
+msgid "Step B: Setting up shipping rules in Sendcloud"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:81
+#, php-format
+msgid "Shipping rules link the shipping method you added in WooCommerce (the one customers see and select at checkout) to a real carrier service, such as %s."
+msgstr ""
+
+#. translators: %1$s = <i>, %2$s = </i>, %3$s = opening link tag, %4$s = closing link tag
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:95
+#, php-format
+msgid "In your Sendcloud account, go to %1$sShipping%2$s > %3$sShipping Rules%4$s."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap "Click Create new rule" %3$s and %4$s wrap "Open template" %5$s and %6$s wrap "Select shipping method based on customer choice at checkout" %7$s and %8$s wrap "Start creating"
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:114
+#, php-format
+msgid ""
+"Click %1$sCreate new rule%2$s, then choose %3$sOpen template%4$s in\n"
+"                                 “%5$sSelect shipping method based on customer choice at checkout%6$s”\n"
+"                                  (or %7$sStart creating%8$s in “Build a custom rule from scratch”)."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap the example rule name in italic tags
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:132
+#, php-format
+msgid "Name your shipping rule, for example “%1$sDelivery 24-48 hrs Peninsular%2$s”."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap the example rule name in strong tags
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:146
+#, php-format
+msgid "Use the condition %1$s“Checkout delivery method”%2$s."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap “Contains”, %3$s and %4$s wrap “Is”
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:160
+#, php-format
+msgid "Select the operator “%1$sContains%2$s” (if the name could be longer) or “%3$sIs%4$s” (for an exact match)."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap “Contains” %3$s and %4$s wrap “Is” %5$s and %6$s wrap “Delivery 24–48 hrs”
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:178
+#, php-format
+msgid "In the next field, enter part of the name from your WooCommerce shipping method (if you selected “%1$sContains%2$s”) or the exact name (if you selected “%3$sIs%4$s”). In this example: “%5$sDelivery 24–48 hrs%6$s”."
+msgstr ""
+
+#. translators: %1$s and %2$s wrap “Actions” in strong
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:193
+#, php-format
+msgid "Under “Actions”, use the option %1$s“Ship with”%2$s."
+msgstr ""
+
+#. translators: Select a value
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:205
+msgid "From the “Select a value” drop-down, select the applicable shipping method."
+msgstr ""
+
+#. translators: %1$s and %2$s = <strong>Note:</strong> %3$s = <i>“Correos Premium Home Delivery”</i> %4$s = <i>“Correos Premium Home Delivery 0–1 kg, 1–2 kg”</i> %5$s = <i>“In some cases, certain carriers may require a separate rule for each weight range.”</i>
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:222
+#, php-format
+msgid "%1$sNote:%2$s If you ship parcels with different weights, in most cases, you only need to create one shipping rule for your chosen shipping option (for example, %3$s ...). Select any method within that option; the system will automatically choose the correct one based on the parcel’s weight (for example, %4$s, and so on). %5$s"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:227
+msgid "Correos Premium Home Delivery"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:228
+msgid "Correos Premium Home Delivery 0–1 kg, 1–2 kg"
+msgstr ""
+
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:229
+msgid "In some cases, certain carriers may require a separate rule for each weight range."
+msgstr ""
+
+#. translators: Instruction for repeating the process for all shipping methods, with a note about subscription plans.
+#: resources/views/wc-settings/dashboard/shipping-methods/sendcloud-setup.php:242
+msgid ""
+"Repeat this process for all the shipping methods available at checkout. Keep in mind that each \n"
+"                subscription plan includes a limited number of shipping rules (unlimited for the Premium and Pro plans)."
+msgstr ""
+
+#: resources/views/wc-settings/sendcloud-connect.php:20
+msgid "You’re just one step away from easier order processing, faster shipping, less work, and happier customers."
+msgstr ""
+
+#. translators: %s is the word "Connect" in bold HTML
+#: resources/views/wc-settings/sendcloud-connect.php:26
+#, php-format
+msgid "Tick the checkbox to enable the Connect button and click %s to get started."
+msgstr ""
+
+#. translators: Button label to connect the plugin with Sendcloud
+#: resources/views/wc-settings/sendcloud-connect.php:27
+#: resources/views/wc-settings/sendcloud-connect.php:66
+msgid "Connect"
+msgstr ""
+
+#. translators: %s is API username example
+#: resources/views/wc-settings/sendcloud-connect.php:36
+#, php-format
+msgid "When you connect, the plugin will create a new user named %s with the Shop Manager role."
+msgstr ""
+
+#: resources/views/wc-settings/sendcloud-connect.php:40
+msgid "A secure connection via WooCommerce REST API keys will be established."
+msgstr ""
+
+#. translators: This text appears next to a checkbox that the user must tick before connecting
+#: resources/views/wc-settings/sendcloud-connect.php:47
+msgid "I acknowledge and agree to the creation of this user and API key"
+msgstr ""
+
+#. translators: Span label for link to Sendcloud Panel
+#: resources/views/wc-settings/sendcloud-dashboard.php:29
+msgid "Go to Sendcloud"
+msgstr ""
+
+#. translators: Span label for link to Sendcloud support page
+#: resources/views/wc-settings/sendcloud-dashboard.php:39
+msgid "Support"
+msgstr ""
+
+#. translators: Title for the integration guide section
+#: resources/views/wc-settings/sendcloud-dashboard.php:52
+msgid "Configure your integration to get the most out of Sendcloud"
+msgstr ""
+
+#. translators: %1$s is "Your WooCommerce shop is now connected to Sendcloud." in bold HTML, %2$s is the word "optional" in bold HTML
+#: resources/views/wc-settings/sendcloud-dashboard.php:60
+#, php-format
+msgid "%1$s You'll find setup instructions below to help optimize your shipping."
+msgstr ""
+
+#: resources/views/wc-settings/sendcloud-dashboard.php:61
+msgid "Your WooCommerce shop is now connected to Sendcloud."
+msgstr ""
+
+#. translators: Hidden input value shown during connection process
+#: resources/views/wc-settings/sendcloud-page.php:25
+msgid "Connecting..."
+msgstr ""
+
+msgid "Necessary"
+msgstr ""
+
+msgid "Recommended"
+msgstr ""
+
+msgid "Optional"
+msgstr ""
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/unstampedletter.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/unstampedletter_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wccompletedstatus.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wccompletedstatus_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wcordernotes.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcordernotes_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/configurationfeedbacktowebshop.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/configurationfeedbacktowebshop_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wcshopmanagerrole.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcshopmanagerrole_FR.png"
+
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN1.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcaddzone_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/setup_shippingmethod.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcsetup_shippingmethod_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/Checkout%20method_shipping%20rule.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/checkoutmethod_shippingrule_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/confi.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/confi_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/EN%20service%20points%20WC%20in%20panel.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/servicepointsinpanel_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/servicepoint_delivery[Sendcloud].png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/servicepoint_delivery[Sendcloud]_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/setupservicepointdelivery.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcsetupservicepointdelivery_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/englishwoocommm1229983834.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wceanbysendcloud_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/ENV2inventory22.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcean_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN5.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wchscodecountryoforiginbysc_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/feedbacktothewebshop.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/feedbacktothewebshop_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/orderfiltering.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/orderfiltering_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/importparcelweight.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/importparcelweight_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/sendtrackingupdates.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/sendtrackingupdates_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/disconnectV1.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/disconnectV1_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wcdeactivateanddelete.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcdeactivateanddelete_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/MigrationSPWC22.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcmigrationsp_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/DisMigraSPWC.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcenablemigrasp_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN2.png"
+msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcaddshippingmethod_FR.png"
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/EN%20parcel%20dimensions%20check.png"
+msgstr ""
+
+msgid "<strong>Note:</strong> If multiple carriers are activated while the dimension checker is enabled, you’ll see this error: <i>"One of the items in your order is too large to be shipped to a service point. Search is limited to your selected country."</i> This is why we recommend using dimension checking only for PostNL and DHL service points."
+msgstr "Remarque: Activer différents transporteurs pour les points relais avec la fonctionnalité de vérification des dimensions entraînera une erreur: "L'un de vos articles est trop grand pour être expédier en point relais. La recherche est limitée au pays que vous avez sélectionné". Nous vous invitons à n'utiliser le contrôle des dimensions que pour les points relais PostNL et DHL."
+
+msgid "This feature is dependent on you having entered the correct dimensions for all of your products in your WooCommerce admin environment. The example below shows how to set up maximum dimensions in your WooCommerce product settings:"
+msgstr "Cette fonctionnalité s'appuie sur le fait que vous ayez saisi les bonnes dimensions pour tous vos produits dans votre WooCommerce. L'exemple ci-dessous montre comment configurer les dimensions maximales dans les paramètres de votre produit WooCommerce:"
+
+msgid "The service point picker will filter out carriers that cannot handle products of that given size."
+msgstr "Le sélecteur de point relais éliminera les transporteurs qui ne peuvent pas prendre les produits de cette taille en charge."
+
+msgid "Please bear in mind that there is no advance packing logic behind this — we simply check if all the given products in an order are within the maximum dimensions of the carrier."
+msgstr "Il est important de savoir qu'il n'y a pas de prise en compte de l'emballage derrière cela. Nous vérifions simplement si tous les produits d'une commande respectent les dimensions maximales des transporteurs."
+
+msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/webhookfeedback_testAPIwebhook.png"
+msgstr ""
+
+msgid "https://support.sendcloud.com/hc/en-us/articles/360046514071-How-to-get-support-from-Sendcloud"
+msgstr "https://support.sendcloud.com/hc/fr/articles/360046514071-Comment-contacter-Sendcloud"
+
+msgid "https://support.sendcloud.com/hc/en-us/articles/360025142831-How-can-I-import-CSV-bulk-orders"
+msgstr "https://support.sendcloud.com/hc/fr/articles/360025142831-Importation-de-commandes-depuis-un-fichier-CSV"
+
+msgid "https://support.sendcloud.com/hc/en-us/articles/360024840812-Sendcloud-Tracking"
+msgstr "https://support.sendcloud.com/hc/fr/articles/360024840812-Suivi-de-vos-envois"
+
+msgid "https://support.sendcloud.com/hc/en-us/articles/11290144256788-How-do-I-manage-shipment-weights-in-Sendcloud"
+msgstr "https://support.sendcloud.com/hc/fr/articles/11290144256788-Comment-puis-je-g%C3%A9rer-le-poids-de-mes-colis-dans-Sendcloud"
+
+msgid "https://support.sendcloud.com/hc/en-us/articles/34955558577297-WooCommerce-V2-Integration"
 msgstr ""

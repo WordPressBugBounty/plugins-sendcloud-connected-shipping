@@ -1,5 +1,24 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2025-12-15 - version 1.0.22 =
+* New redesigned plugin interface for speed optimization and translations.
+
+= 2025-11-21 - version 1.0.21 =
+* Add missing files, fix minor UI issues.
+
+= 2025-11-21 - version 1.0.20 =
+* New redesigned plugin interface for a more intuitive and modern user experience.
+
+= 2025-11-05 - version 1.0.19 =
+* Fixed service point data now correctly clears when changing the shipping method from a service point option.
+
+= 2025-11-04 - version 1.0.18 =
+* Track product EAN change and update related unprocessed orders
+
+= 2025-10-20 - version 1.0.17 =
+* Service Point validation on initial load in Block Checkout.
+* Ensured compatibility with other checkout modules.
+
 = 2025-09-24 - version 1.0.16 =
 * Implement compatibility with WooCommerce's block-based checkout
 

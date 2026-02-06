@@ -7,6 +7,7 @@ use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Response;
 use WC_Shipping_Zone;
 use WC_Shipping_Zones;
 use SCCSP\SendCloud\Connected\Shipping\Services\SCCSP_Config_Service;
+use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Shipping_Zone;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
@@ -27,17 +28,23 @@ class SCCSP_Migration_Controller
     private $config_service;
 
     /**
+     * @var SCCSP_Shipping_Zone
+     */
+    private $shipping_zone_utility;
+
+    /**
      * Constructor to initialize the Migration_Controller.
      */
     public function __construct()
     {
         $this->config_service = new SCCSP_Config_Service();
+        $this->shipping_zone_utility = new SCCSP_Shipping_Zone();
     }
 
     public function migrate_service_points()
     {
         try {
-            $zones = $this->get_shipping_zones();
+            $zones = $this->shipping_zone_utility->get_shipping_zones();
 
             foreach ($zones as $zone) {
                 $this->process_zone_for_migration($zone);
@@ -58,43 +65,6 @@ class SCCSP_Migration_Controller
         } catch (\Exception $e) {
             SCCSP_Response::json(['success' => false, 'message' => $e->getMessage()], 400);
         }
-    }
-
-    /**
-     * Checks if a specific shipping method exists in any zone.
-     *
-     * @param string $method_id
-     * @return bool
-     */
-    private function zone_has_method(string $method_id): bool
-    {
-        $zones = WC_Shipping_Zones::get_zones();
-
-        foreach ($zones as $zone) {
-            $zone_id = $zone['zone_id'];
-            $zone_obj = new WC_Shipping_Zone($zone_id);
-            $shipping_methods = $zone_obj->get_shipping_methods();
-
-            foreach ($shipping_methods as $method) {
-                if ($method->id === $method_id) {
-                    return true;
-                }
-            }
-        }
-
-        $rest_of_the_world_zone = WC_Shipping_Zones::get_zone_by('zone_id', 0);
-
-        if ($rest_of_the_world_zone) {
-            $shipping_methods = $rest_of_the_world_zone->get_shipping_methods();
-
-            foreach ($shipping_methods as $method) {
-                if ($method->id === $method_id) {
-                    return true;
-                }
-            }
-        }
-
-        return false;
     }
 
     /**
@@ -166,16 +136,6 @@ class SCCSP_Migration_Controller
     }
 
     /**
-     * Retrieves all WooCommerce shipping zones.
-     *
-     * @return array
-     */
-    private function get_shipping_zones(): array
-    {
-        return WC_Shipping_Zones::get_zones();
-    }
-
-    /**
      * Processes a single shipping zone for migration.
      *
      * @param array $zone
@@ -199,12 +159,9 @@ class SCCSP_Migration_Controller
         $migration_required = $this->config_service->is_migration_required();
         $integration_id = $this->config_service->get_integration_id();
         $migration_completed = $this->config_service->is_migration_completed();
-        $method_exists = $this->zone_has_method('service_point_shipping_method');
 
-        if ($migration_required && $integration_id && !$migration_completed && $method_exists) {
-            SCCSP_Response::json(['show_migration_button' => true]);
-        } else {
-            SCCSP_Response::json(['show_migration_button' => false]);
-        }
+        SCCSP_Response::json([
+            'show_migration_button' => $migration_required && $integration_id && !$migration_completed
+        ]);
     }
 }

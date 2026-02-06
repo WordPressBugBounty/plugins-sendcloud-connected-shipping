@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0f5db296a1f2f4f91da748d7f4b34079
+class ComposerStaticInit799da1d7fc2f83b97f37781f90812d9d
 {
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -63,6 +63,7 @@ class ComposerStaticInit0f5db296a1f2f4f91da748d7f4b34079
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Logger' => __DIR__ . '/../..' . '/includes/Utility/class-logger.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Logger_Factory' => __DIR__ . '/../..' . '/includes/Utility/class-logger-factory.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Response' => __DIR__ . '/../..' . '/includes/Utility/class-response.php',
+        'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Shipping_Zone' => __DIR__ . '/../..' . '/includes/Utility/class-shipping-zone.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Shop_Helper' => __DIR__ . '/../..' . '/includes/Utility/class-shop-helper.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Version_Utility' => __DIR__ . '/../..' . '/includes/Utility/class-version-utility.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_View' => __DIR__ . '/../..' . '/includes/Utility/class-view.php',
@@ -71,7 +72,7 @@ class ComposerStaticInit0f5db296a1f2f4f91da748d7f4b34079
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit0f5db296a1f2f4f91da748d7f4b34079::$classMap;
+            $loader->classMap = ComposerStaticInit799da1d7fc2f83b97f37781f90812d9d::$classMap;
 
         }, null, ClassLoader::class);
     }

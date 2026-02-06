@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.16
+Version: 1.0.22
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
-Requires at least: 4.9
+Requires at least: 4.9.0
 Requires PHP: 7.0
-Tested up to: 6.8.2
-Stable tag: 1.0.16
+Tested up to: 6.8.3
+Stable tag: 1.0.22
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -102,6 +102,25 @@ Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346
 8. More than 2k 5-star reviews | Sendcloud
 
 == Changelog ==
+= 1.0.22 =
+* New redesigned plugin interface for speed optimization and translations.
+
+= 1.0.21 =
+* Add missing files, fix minor UI issues.
+
+= 1.0.20 =
+* New redesigned plugin interface for a more intuitive and modern user experience.
+
+= 1.0.19 =
+* Fixed service point data now correctly clears when changing the shipping method from a service point option.
+
+= 1.0.18 =
+* Track product EAN change and update related unprocessed orders.
+
+= 1.0.17 =
+* Service Point validation on initial load in Block Checkout.
+* Ensured compatibility with other checkout modules.
+
 = 1.0.16 =
 * Implement compatibility with WooCommerce's block-based checkout
 

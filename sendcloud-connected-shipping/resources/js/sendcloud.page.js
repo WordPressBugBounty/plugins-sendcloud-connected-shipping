@@ -1,11 +1,14 @@
 (function ($) {
     'use strict';
     $(document).ready(function () {
-        let button = $('#sendcloud_shipping_connect .connect-button'),
-            agreement = $('#cs_agreement'),
+        let button = $('.sendcloud-content.connect button.sendcloud-button.connect'),
+            agreement = $('#sc_agreement'),
             connectingLabel = $('#sc-connecting-label')[0],
             connectContainer = $('#sc-connect-container')[0],
-            dashboardContainer = $('#sc-dashboard-container')[0];
+            dashboardContainer = $('#sc-dashboard-container')[0],
+            migrationInitiation = $('#sc-migration-initiation')[0],
+            migrateButton = $('#sc-migrate-service-points'),
+            screenshotElement = $('.sc-screenshot-thumb');
 
         agreement.change(function () {
             if (this.checked) {
@@ -30,19 +33,16 @@
                 'action': 'sc_check_status'
             };
 
-            var pollingInterval = setInterval(checkStatus, 2000);
+            let pollingInterval = setInterval(checkStatus, 2000);
 
             function checkStatus() {
                 $.post(ajaxurl, data, function (response) {
                     if (response.is_connected) {
-                        connectContainer.classList.add('sc-hidden');
-                        dashboardContainer.classList.remove('sc-hidden');
+                        location.reload();
                     }
                 });
             }
         });
-
-        let migrationPanel = $('#sendcloud_migration_panel')[0];
 
         function checkMigrationStatus() {
             let data = {
@@ -50,45 +50,72 @@
             };
 
             $.post(ajaxurl, data, function (response) {
-                if (response.show_migration_button) {
-                    migrationPanel.style.display = 'block';
-                } else {
-                    migrationPanel.style.display = 'none';
+                if (migrationInitiation) {
+                    migrationInitiation.classList.toggle('sc-hidden', !response.show_migration_button);
                 }
             });
         }
 
         setInterval(checkMigrationStatus, 1000);
 
-        let migrateButton = $('#migrate-service-points');
-        let message = $('#migration-message');
-
         migrateButton.click(function () {
+            migrateButton.prop('disabled', true);
+
             let data = {
                 'action': 'migrate_service_points'
             };
 
-            message.text('').hide();
-
             $.post(ajaxurl, data, function (response) {
                 if (response.success) {
-                    showMessage(response.message, 'green');
+                    migrationInitiation.classList.add('sc-hidden');
+                    $('#sc-migration-completed-steps').removeClass('sc-hidden');
                 } else {
-                    showMessage(response.message || 'Unknown error occurred.', 'red');
+                    $('#sc-migration-action-error').text('Migration failed. Please try again or contact support.').removeClass('sc-hidden');
+                    migrateButton.prop('disabled', false);
                 }
             }).fail(function () {
-                showMessage('AJAX request failed.', 'red');
-            });
-
-            function showMessage(text, color) {
-                message
-                    .text(text)
-                    .css({'color': color, 'display': 'block'})
-                    .fadeIn();
+                $('#sc-migration-action-error').text('AJAX request failed. Please check your connection.').removeClass('sc-hidden');
 
                 setTimeout(() => {
-                    message.fadeOut();
-                }, 3000);
+                    $('#sc-migration-action-error').addClass('sc-hidden');
+                }, 5000);
+
+                migrateButton.prop('disabled', false);
+            });
+        });
+
+        $('.sc-accordion-header').on('click', function(){
+            let content = $(this).next('.sc-accordion-content');
+
+            $('.sc-accordion-content').not(content).slideUp();
+            $('.sc-accordion-header').not(this).removeClass('open');
+
+            content.slideToggle();
+            $(this).toggleClass('open');
+        });
+
+        $('.sc-sub-accordion-header').on('click', function(){
+            let content = $(this).next('.sc-sub-accordion-content');
+
+            $('.sc-sub-accordion-content').not(content).slideUp();
+            $('.sc-sub-accordion-header').not(this).removeClass('open');
+
+            content.slideToggle();
+            $(this).toggleClass('open');
+        });
+
+        screenshotElement.on('click', function (e) {
+            e.stopPropagation();
+            $(this).toggleClass('active');
+        });
+
+        $(document).on('click', function () {
+            screenshotElement.removeClass('active');
+        });
+
+        $(document).on('keyup', function (e) {
+            if (e.key === 'Escape') {
+                screenshotElement.removeClass('active');
             }
         });
     });

@@ -176,22 +176,40 @@ class SCCSP_Checkout_Handler
 
         SCCSP_Logger::info('Checkout_Handler::update_order_meta(): ' . 'service point selected: ' . $service_point_selected);
 
-        if ($service_point_selected) {
-            $service_point_json = isset($_POST[self::SERVICE_POINT_EXTRA_FIELD_NAME_V2])
-                ? sanitize_text_field(wp_unslash($_POST[self::SERVICE_POINT_EXTRA_FIELD_NAME_V2])) : '';
-            $service_point_data = json_decode($service_point_json, true);
-            if (isset($service_point_data['id'], $service_point_data['toPostalCode'], $service_point_data['name'],
-                $service_point_data['street'], $service_point_data['city'], $service_point_data['postal_code'], $service_point_data['house_number'])
-            ) {
-                $this->order_repository->save_service_point_meta($order_id, $service_point_json);
+        $chosen_methods = WC()->session->get( 'chosen_shipping_methods' );
+        $chosen_method  = is_array( $chosen_methods ) ? reset( $chosen_methods ) : null;
 
+        if ( empty( $chosen_method ) || strpos( $chosen_method, 'service_point_v2_shipping_method' ) === false ) {
+            SCCSP_Logger::info( 'Checkout_Handler::update_order_meta(): chosen shipping method is not service_point_v2_shipping_method.' );
+            $this->order_repository->delete_service_point_meta( $order_id );
+            return;
+        }
+
+        if ( $service_point_selected ) {
+            $service_point_json = isset( $_POST[ self::SERVICE_POINT_EXTRA_FIELD_NAME_V2 ] )
+                ? sanitize_text_field( wp_unslash( $_POST[ self::SERVICE_POINT_EXTRA_FIELD_NAME_V2 ] ) )
+                : '';
+
+            $service_point_data = json_decode( $service_point_json, true );
+            if (
+                isset(
+                    $service_point_data['id'],
+                    $service_point_data['toPostalCode'],
+                    $service_point_data['name'],
+                    $service_point_data['street'],
+                    $service_point_data['city'],
+                    $service_point_data['postal_code'],
+                    $service_point_data['house_number']
+                )
+            ) {
+                $this->order_repository->save_service_point_meta( $order_id, $service_point_json );
                 return;
             }
         }
 
-        SCCSP_Logger::warning('Service point data not found.');
+        $this->order_repository->delete_service_point_meta( $order_id );
+        SCCSP_Logger::warning( 'Service point data not found or not selected.' );
     }
-
     /**
      * Adds service point information in the order thank you page
      *

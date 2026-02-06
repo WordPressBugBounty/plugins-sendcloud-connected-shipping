@@ -33,6 +33,12 @@ class SCCSP_Checkout_Block_Handler extends SCCSP_Checkout_Handler {
             2
         );
 
+        add_action( 'woocommerce_store_api_cart_select_shipping_rate',
+            array( $this, 'shipping_rate_change_handler' ),
+            10,
+            3
+        );
+
         add_action(
             'woocommerce_blocks_loaded',
             function() {
@@ -89,9 +95,11 @@ class SCCSP_Checkout_Block_Handler extends SCCSP_Checkout_Handler {
         if ( ! $chosen_shipping_methods ) {
             return;
         }
-        $shipping_method_id = explode( ':', reset( $chosen_shipping_methods ) )[0];
 
+        $order_repository = new SCCSP_Order_Repository();
+        $shipping_method_id = explode( ':', reset( $chosen_shipping_methods ) )[0];
         if ( Service_Point_Free_Shipping_Method::ID !== $shipping_method_id || empty( $order->get_items( 'shipping' ) ) ) {
+            $order_repository->delete_service_point_meta( $order->get_id() );
             return;
         }
 
@@ -114,9 +122,25 @@ class SCCSP_Checkout_Block_Handler extends SCCSP_Checkout_Handler {
                 return;
             }
 
-			SCCSP_Logger::warning( 'Service point data not found.' );
-		}
-	}
+            SCCSP_Logger::warning( 'Service point data not found.' );
+        }
+    }
+
+    /**
+     * Handle shipping rate selection via Store API.
+     * Clears notices.
+     *
+     * @param int           $package_id
+     * @param string        $rate_id
+     * @param \WP_REST_Request $request
+     */
+    function shipping_rate_change_handler( $package_id, $rate_id, $request ) {
+        $shipping_method_id = explode( ':', $rate_id )[0];
+
+        if ( Service_Point_Free_Shipping_Method::ID !== $shipping_method_id ) {
+            wc_clear_notices();
+        }
+    }
 
     /**
      * Fetch service point data from request
