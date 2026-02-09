@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-02-09 - version 1.0.23 =
+* Fix connect to sendcloud.
+
 = 2025-12-15 - version 1.0.22 =
 * New redesigned plugin interface for speed optimization and translations.
 

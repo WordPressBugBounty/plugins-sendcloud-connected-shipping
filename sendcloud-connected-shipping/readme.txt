@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.22
+Version: 1.0.23
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
-Requires at least: 4.9.0
+Requires at least: 4.9
 Requires PHP: 7.0
-Tested up to: 6.8.3
-Stable tag: 1.0.22
+Tested up to: 6.9
+Stable tag: 1.0.23
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv

@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 
 class SCCSP_Sendcloud {
 
-	const VERSION = '1.0.22';
+	const VERSION = '1.0.23';
 	const INTEGRATION_NAME = 'sendcloudshipping';
 	const BASE_API_URI = 'sendcloudshipping/v2';
 

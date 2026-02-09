@@ -57,7 +57,7 @@ if (!defined('ABSPATH')) {
         $disabled_class = !$data['permalinks_enabled'] ? ' sendcloud-button-disabled' : '';
         ?>
         <button
-                class="sendcloud-button connect disabled <?php echo esc_attr($disabled_class); ?>"
+                class="sendcloud-button connect <?php echo esc_attr($disabled_class); ?>"
                 <?php disabled(!$data['permalinks_enabled']); ?>
                 disabled="disabled"
         >
