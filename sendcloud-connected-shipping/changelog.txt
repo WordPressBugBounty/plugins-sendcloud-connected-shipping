@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-02-19 - version 1.0.24 =
+* Compatible with Woocommerce 10.4.3
+
 = 2026-02-09 - version 1.0.23 =
 * Fix connect to sendcloud.
 

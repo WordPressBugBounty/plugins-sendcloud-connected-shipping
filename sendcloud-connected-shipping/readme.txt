@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.23
+Version: 1.0.24
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 6.9
-Stable tag: 1.0.23
+Stable tag: 1.0.24
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -102,6 +102,12 @@ Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346
 8. More than 2k 5-star reviews | Sendcloud
 
 == Changelog ==
+= 1.0.24 =
+* Compatible with Woocommerce 10.4.3
+
+= 1.0.23 =
+* Fixed connect to Sendcloud
+
 = 1.0.22 =
 * New redesigned plugin interface for speed optimization and translations.
 
