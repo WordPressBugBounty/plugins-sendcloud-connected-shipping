@@ -33,7 +33,6 @@ class SCCSP_Connect_Controller {
 	 */
 	public function generate_redirect_url() {
 		try {
-			update_option( 'woocommerce_api_enabled', 'yes' );
 			$redirect_url = $this->connect_service->get_redirect_url();
 		} catch ( \Exception $exception ) {
 			$redirect_url = null;
