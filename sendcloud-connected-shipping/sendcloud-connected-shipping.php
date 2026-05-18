@@ -3,13 +3,13 @@
  * Plugin Name: Sendcloud Shipping
  * Plugin URI: https://wordpress.org/plugins/sendcloud-connected-shipping/
  * Description: Sendcloud plugin.
- * Version: 1.0.25
+ * Version: 1.0.26
  * Woo:
  * Author: Sendcloud B.V.
  * Author URI: https://www.sendcloud.com
  * License: GPLv2
  * Requires at least: 4.9
- * Tested up to: 6.9
+ * Tested up to: 7.0
  *
  * Text Domain: sendcloud-connected-shipping
  * Domain Path: /i18n/languages/
