@@ -12,23 +12,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class SCCSP_Checkout_Block_Handler extends SCCSP_Checkout_Handler {
 
-	/**
-	 * @return void
-	 */
-	public function init() {
-		add_action(
-			'woocommerce_blocks_enqueue_checkout_block_scripts_after',
-			array( $this, 'add_script_data' ),
-			111
-		);
-		add_action(
-			'woocommerce_blocks_enqueue_checkout_block_scripts_after',
-			array( $this, 'add_carriers_to_checkout_block' ),
-			111
-		);
+    /**
+     * @return void
+     */
+    public function init() {
+        if (is_plugin_active('sendcloud-dynamic-checkout/plugin.php')) {
+            add_action( 'woocommerce_package_rates',
+                array( $this, 'remove_v2_service_points_for_dynamic_checkout' ),
+                10,
+                2
+            );
 
-		add_action( 'woocommerce_store_api_checkout_update_order_from_request',
-			array( $this, 'validate_and_save' ),
+            return;
+        }
+
+        add_action(
+            'woocommerce_blocks_enqueue_checkout_block_scripts_after',
+            array( $this, 'add_script_data' ),
+            111
+        );
+        add_action(
+            'woocommerce_blocks_enqueue_checkout_block_scripts_after',
+            array( $this, 'add_carriers_to_checkout_block' ),
+            111
+        );
+
+        add_action( 'woocommerce_store_api_checkout_update_order_from_request',
+            array( $this, 'validate_and_save' ),
             10,
             2
         );
@@ -54,7 +64,23 @@ class SCCSP_Checkout_Block_Handler extends SCCSP_Checkout_Handler {
                 ]);
             }
         );
-	}
+    }
+
+    /**
+     * Removes Service Point Shipping Method when Sendcloud Dynamic Checkout Plugin is Installed
+     *
+     * @param $rates
+     * @param $package
+     * @return mixed
+     */
+    public function remove_v2_service_points_for_dynamic_checkout($rates, $package) {
+        foreach ( $rates as $rate_id => $rate ) {
+            if ( 'service_point_v2_shipping_method' === $rate->method_id) {
+                unset( $rates[ $rate_id ] );
+            }
+        }
+        return $rates;
+    }
 
 	/**
 	 * Add carriers to checkout block

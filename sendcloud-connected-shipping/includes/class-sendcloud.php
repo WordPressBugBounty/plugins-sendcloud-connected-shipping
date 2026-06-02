@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 
 class SCCSP_Sendcloud {
 
-	const VERSION = '1.0.26';
+	const VERSION = '1.0.28';
 	const INTEGRATION_NAME = 'sendcloudshipping';
 	const BASE_API_URI = 'sendcloudshipping/v2';
 
@@ -275,9 +275,9 @@ class SCCSP_Sendcloud {
 	 * @return mixed
 	 */
 	public function register_shipping_methods( $methods ) {
-		if ( $this->config_service->get_service_point_script() ) {
-			$methods[ Service_Point_Free_Shipping_Method::ID ] = Service_Point_Free_Shipping_Method::CLASS_NAME;
-		}
+        if (!is_plugin_active( 'sendcloud-dynamic-checkout/plugin.php' ) && $this->config_service->get_service_point_script() ) {
+            $methods[ Service_Point_Free_Shipping_Method::ID ] = Service_Point_Free_Shipping_Method::CLASS_NAME;
+        }
 
 		return $methods;
 	}

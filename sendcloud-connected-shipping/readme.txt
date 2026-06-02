@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.26
+Version: 1.0.28
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 7.0
-Stable tag: 1.0.26
+Stable tag: 1.0.28
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -102,6 +102,16 @@ Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346
 8. More than 2k 5-star reviews | Sendcloud
 
 == Changelog ==
+
+= 1.0.28 =
+* Fixed config table creation in multisite setups with over 100 multisites
+
+= 1.0.27 =
+* Added compatibility with Sendcloud Dynamic Checkout Plugin V2
+
+= 1.0.26 =
+* Compatible with Wordpress 7.0
+
 = 1.0.25 =
 * Compatible with Woocommerce 10.6.1
 * Removed rudimentary Legacy API activation

@@ -9,7 +9,7 @@ use SCCSP\SendCloud\Connected\Shipping\Database\SCCSP_Abstract_Migration;
  *
  * @package SCCSP\SendCloud\Connected\Shipping\Database\Migrations
  */
-class Migration_1_0_0 extends SCCSP_Abstract_Migration {
+class Migration_1_0_28 extends SCCSP_Abstract_Migration {
 
 	public function execute() {
 		$this->create_configs_table();

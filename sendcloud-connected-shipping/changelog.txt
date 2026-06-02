@@ -1,5 +1,11 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-05-29 - version 1.0.28 =
+* Fixed config table creation in multisite setups with over 100 multisites
+
+= 2026-05-28 - version 1.0.27 =
+* Added compatibility with Sendcloud Dynamic Checkout Plugin V2
+
 = 2026-05-18 - version 1.0.26 =
 * Compatible with Wordpress 7.0
 

@@ -29,21 +29,53 @@ class SCCSP_Database
      *
      */
     public function update( $is_multisite ) {
-        if ( $is_multisite ) {
-            $sites = get_sites();
-            /**
-             * WP site
-             *
-             * @var WP_Site $site
-             */
-            foreach ( $sites as $site ) {
-                switch_to_blog( $site->blog_id );
-                $this->do_update();
-                restore_current_blog();
-            }
-        } else {
+
+        if ( !$is_multisite ) {
             $this->do_update();
+            return;
         }
+
+        $this->batch_process_multisite();
+    }
+
+    /**
+     * Batch schema update for multistore setups
+     *
+     * @return void
+     */
+    private function batch_process_multisite()
+    {
+        $batch_size = 100;
+        $offset = 0;
+
+        do {
+            $sites = get_sites( [
+                'fields' => 'ids',
+                'number' => $batch_size,
+                'offset' => $offset,
+            ] );
+
+            foreach ( $sites as $site_id ) {
+
+                switch_to_blog( $site_id );
+
+                try {
+                    $this->do_update();
+
+                } catch (\Throwable $e) {
+                    $message =  sprintf(
+                        'Migration for store ID %d failed: %s',
+                        $site_id,
+                        $e->getMessage()
+                    );
+                    SCCSP_Logger::error( $message );
+                } finally {
+                    restore_current_blog();
+                }
+            }
+
+            $offset += $batch_size;
+        } while (!empty($sites));
     }
 
     /**
