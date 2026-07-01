@@ -44,12 +44,12 @@ class SCCSP_Service_Point_Controller extends SCCSP_Base_WC_REST_Controller {
 	 * @return array|WP_Error
 	 */
 	public function enable_service_points( $data ) {
-		SCCSP_Logger::info( 'POST sendcloudshipping/v2/service_point API endpoint invoked. Data: ' . json_encode( $data ) );
+		SCCSP_Logger::info( 'POST sendcloudshipping/v2/service_point API endpoint invoked. Data: ' . json_encode( $data->get_body() ) );
 		if ( isset( $data['script_url'] ) ) {
 			$this->config_service->set_service_point_script( $data['script_url'] );
 			$this->config_service->set_service_point_carriers( $data['carriers'] );
 		} else {
-			SCCSP_Logger::error( 'Integration ID missing in the payload. Data: ' . json_encode( $data ) );
+			SCCSP_Logger::error( 'Integration ID missing in the payload. Data: ' . json_encode( $data->get_body() ) );
 
             return new WP_Error(
                 'sc-invalid-payload',
@@ -79,11 +79,11 @@ class SCCSP_Service_Point_Controller extends SCCSP_Base_WC_REST_Controller {
      * @return array|WP_Error
      */
     public function update_service_points( $data ) {
-        SCCSP_Logger::info( 'PATCH sendcloudshipping/v2/service_point API endpoint invoked. Data: ' . json_encode( $data ) );
+        SCCSP_Logger::info( 'PATCH sendcloudshipping/v2/service_point API endpoint invoked. Data: ' . json_encode( $data->get_body() ) );
         if ( isset( $data['carriers'] ) ) {
             $this->config_service->set_service_point_carriers( $data['carriers'] );
         } else {
-            SCCSP_Logger::error( 'Carrier list is missing in the payload. Data: ' . json_encode( $data ) );
+            SCCSP_Logger::error( 'Carrier list is missing in the payload. Data: ' . json_encode( $data->get_body() ) );
 
             return new WP_Error(
                 'sc-invalid-payload',

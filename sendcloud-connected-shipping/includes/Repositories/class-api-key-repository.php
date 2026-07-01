@@ -15,6 +15,8 @@ class SCCSP_Api_Key_Repository {
 
 	const WC_API_KEYS_TABLE_NAME = 'woocommerce_api_keys';
 
+    const WP_USER_EMAIL = 'noreply-plugin@sendcloud.com';
+
     /**
      * @var SCCSP_Config_Repository
      */
@@ -31,6 +33,7 @@ class SCCSP_Api_Key_Repository {
      * Gets fresh api_key
      *
      * @return SCCSP_Api_Key
+     * @throws \Exception
      */
     public function get_fresh_credentials() {
         $api_key = $this->get_api_key();
@@ -189,7 +192,7 @@ class SCCSP_Api_Key_Repository {
 		if (!$user) {
             $password = wp_generate_password();
 			// User does not exist, create new admin user
-			$user_id = wp_create_user($username, $password);
+			$user_id = wp_create_user($username, $password, self::WP_USER_EMAIL);
 
 			if (is_wp_error($user_id)) {
                 throw new \Exception( 'Error creating user: ' . esc_html( $user_id->get_error_message() ) );
