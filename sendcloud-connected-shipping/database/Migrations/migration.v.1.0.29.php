@@ -32,9 +32,9 @@ class Migration_1_0_29 extends SCCSP_Abstract_Migration {
         $user_name = $wpdb->get_var(
             $wpdb->prepare(
                 "SELECT `value`
-                 FROM {$wpdb->prefix}sendcloud_configs
-                 WHERE `key` = %s
-                 LIMIT 1",
+             FROM {$wpdb->prefix}sendcloud_configs
+             WHERE `key` = %s
+             LIMIT 1",
                 'USER_NAME'
             )
         );
@@ -43,7 +43,15 @@ class Migration_1_0_29 extends SCCSP_Abstract_Migration {
             return;
         }
 
-        $user = \get_user_by( 'login', $user_name );
+        $user = $wpdb->get_row(
+            $wpdb->prepare(
+                "SELECT ID, user_email
+             FROM {$wpdb->users}
+             WHERE user_login = %s
+             LIMIT 1",
+                $user_name
+            )
+        );
 
         if ( ! $user ) {
             return;
@@ -53,16 +61,19 @@ class Migration_1_0_29 extends SCCSP_Abstract_Migration {
             return;
         }
 
-        $result = \wp_update_user( array(
-            'ID'         => $user->ID,
-            'user_email' => self::WP_USER_EMAIL,
-        ) );
+        $updated = $wpdb->update(
+            $wpdb->users,
+            array( 'user_email' => self::WP_USER_EMAIL ),
+            array( 'ID'         => $user->ID ),
+            array( '%s' ),
+            array( '%d' )
+        );
 
-        if ( \is_wp_error( $result ) ) {
-            \error_log(
+        if ( false === $updated ) {
+            error_log(
                 '[SendCloud] Migration_1_0_29: could not update email for user '
-                . \esc_html( $user_name ) . ' — '
-                . $result->get_error_message()
+                . esc_html( $user_name ) . ' — '
+                . $wpdb->last_error
             );
         }
     }

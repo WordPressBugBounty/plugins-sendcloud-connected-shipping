@@ -3,7 +3,7 @@
         'name' => 'sendcloud/woocommerce',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'd6bc3c6f104399d8e5ebc97e8e015f500c62aff5',
+        'reference' => 'd7f38af042f4111bff901af6b2f2a6069982bf69',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'sendcloud/woocommerce' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'd6bc3c6f104399d8e5ebc97e8e015f500c62aff5',
+            'reference' => 'd7f38af042f4111bff901af6b2f2a6069982bf69',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

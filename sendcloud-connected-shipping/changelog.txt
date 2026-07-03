@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-07-03 - version 1.0.30 =
+* Fix the fatal error that occurs when updating to version 1.0.29
+
 = 2026-06-30 - version 1.0.29 =
 * Added a default email (noreply-plugin@sendcloud.com) to newly created sendcloud_api_* users
 
