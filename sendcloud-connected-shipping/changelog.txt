@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-07-03 - version 1.0.31 =
+* Fixed code regression
+
 = 2026-07-03 - version 1.0.30 =
 * Fix the fatal error that occurs when updating to version 1.0.29
 

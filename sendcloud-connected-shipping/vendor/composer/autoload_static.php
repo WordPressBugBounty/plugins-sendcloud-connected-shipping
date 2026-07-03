@@ -25,7 +25,6 @@ class ComposerStaticInit799da1d7fc2f83b97f37781f90812d9d
         'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_1' => __DIR__ . '/../..' . '/database/Migrations/migration.v.1.0.1.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_11' => __DIR__ . '/../..' . '/database/Migrations/migration.v.1.0.11.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_28' => __DIR__ . '/../..' . '/database/Migrations/migration.v.1.0.28.php',
-        'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_29' => __DIR__ . '/../..' . '/database/Migrations/migration.v.1.0.29.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\SCCSP_Abstract_Migration' => __DIR__ . '/../..' . '/database/class-abstract-migration.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\SCCSP_Migrator' => __DIR__ . '/../..' . '/database/class-migrator.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Utility\\SCCSP_Migration_Reader' => __DIR__ . '/../..' . '/database/Utility/class-migration-reader.php',

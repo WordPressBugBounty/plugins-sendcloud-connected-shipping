@@ -24,7 +24,6 @@ return array(
     'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_1' => $baseDir . '/database/Migrations/migration.v.1.0.1.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_11' => $baseDir . '/database/Migrations/migration.v.1.0.11.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_28' => $baseDir . '/database/Migrations/migration.v.1.0.28.php',
-    'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Migrations\\Migration_1_0_29' => $baseDir . '/database/Migrations/migration.v.1.0.29.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\SCCSP_Abstract_Migration' => $baseDir . '/database/class-abstract-migration.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\SCCSP_Migrator' => $baseDir . '/database/class-migrator.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Database\\Utility\\SCCSP_Migration_Reader' => $baseDir . '/database/Utility/class-migration-reader.php',
