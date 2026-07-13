@@ -1,13 +1,10 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-07-03 - version 1.0.32 =
+* Prevent broken access control in admin AJAX endpoints
+
 = 2026-07-03 - version 1.0.31 =
 * Fixed code regression
-
-= 2026-07-03 - version 1.0.30 =
-* Fix the fatal error that occurs when updating to version 1.0.29
-
-= 2026-06-30 - version 1.0.29 =
-* Added a default email (noreply-plugin@sendcloud.com) to newly created sendcloud_api_* users
 
 = 2026-05-29 - version 1.0.28 =
 * Fixed config table creation in multisite setups with over 100 multisites

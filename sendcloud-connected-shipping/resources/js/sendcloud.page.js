@@ -1,5 +1,13 @@
 (function ($) {
     'use strict';
+
+    function withNonce(data) {
+        if (typeof sccspAjax !== 'undefined' && sccspAjax.nonceField) {
+            data[sccspAjax.nonceField] = sccspAjax.nonce;
+        }
+        return data;
+    }
+
     $(document).ready(function () {
         let button = $('.sendcloud-content.connect button.sendcloud-button.connect'),
             agreement = $('#sc_agreement'),
@@ -22,7 +30,7 @@
             let data = {
                 'action': 'get_redirect_sc_v2_url'
             };
-            $.post(ajaxurl, data, function (response) {
+            $.post(ajaxurl, withNonce(data), function (response) {
                 if (response.redirect_url) {
                     window.open(response.redirect_url, '_blank');
                     button[0].innerHTML = '<div class="sc-loader"></div> ' + connectingLabel.value;
@@ -36,7 +44,7 @@
             let pollingInterval = setInterval(checkStatus, 2000);
 
             function checkStatus() {
-                $.post(ajaxurl, data, function (response) {
+                $.post(ajaxurl, withNonce(data), function (response) {
                     if (response.is_connected) {
                         location.reload();
                     }
@@ -49,7 +57,7 @@
                 'action': 'sc_check_migration'
             };
 
-            $.post(ajaxurl, data, function (response) {
+            $.post(ajaxurl, withNonce(data), function (response) {
                 if (migrationInitiation) {
                     migrationInitiation.classList.toggle('sc-hidden', !response.show_migration_button);
                 }
@@ -65,7 +73,7 @@
                 'action': 'migrate_service_points'
             };
 
-            $.post(ajaxurl, data, function (response) {
+            $.post(ajaxurl, withNonce(data), function (response) {
                 if (response.success) {
                     migrationInitiation.classList.add('sc-hidden');
                     $('#sc-migration-completed-steps').removeClass('sc-hidden');

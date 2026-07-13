@@ -1,12 +1,12 @@
 === Sendcloud Shipping ===
-Version: 1.0.31
+Version: 1.0.32
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 7.0
-Stable tag: 1.0.31
+Stable tag: 1.0.32
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -103,14 +103,8 @@ Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346
 
 == Changelog ==
 
-= 1.0.31 =
-* Fixed code regression
-
-= 1.0.30 =
-* Fix the fatal error that occurs when updating to version 1.0.29
-
-= 1.0.29 =
-* Added a default email (noreply-plugin@sendcloud.com) to newly created sendcloud_api_* users
+= 1.0.32 =
+* Prevent broken access control in admin AJAX endpoints
 
 = 1.0.28 =
 * Fixed config table creation in multisite setups with over 100 multisites

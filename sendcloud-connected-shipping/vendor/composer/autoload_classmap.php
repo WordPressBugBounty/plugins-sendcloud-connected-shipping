@@ -56,6 +56,7 @@ return array(
     'SCCSP\\SendCloud\\Connected\\Shipping\\Services\\SCCSP_Config_Service' => $baseDir . '/includes/Services/class-config-service.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Services\\SCCSP_Connect_Service' => $baseDir . '/includes/Services/class-connect-service.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Services\\SCCSP_Webhook_Service' => $baseDir . '/includes/Services/class-webhook-service.php',
+    'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Ajax_Security' => $baseDir . '/includes/Utility/class-ajax-security.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Auth_Code_Generator' => $baseDir . '/includes/Utility/class-auth-code-generator.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Base64_Url_Encoder' => $baseDir . '/includes/Utility/class-base64-url-encoder.php',
     'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Database' => $baseDir . '/includes/Utility/class-database.php',

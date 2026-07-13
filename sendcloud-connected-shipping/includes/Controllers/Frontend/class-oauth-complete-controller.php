@@ -20,6 +20,11 @@ class SCCSP_OAuth_Complete_Controller extends SCCSP_Base_Controller {
 	const GRANT_TYPE = 'authorization_code';
 
 	/**
+	 * @var string[]
+	 */
+	protected $allowed_actions = array( 'complete' );
+
+	/**
 	 * @var SCCSP_Auth_Service
 	 */
 	private $auth_service;

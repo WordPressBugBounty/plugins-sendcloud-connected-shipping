@@ -4,6 +4,7 @@ namespace SCCSP\SendCloud\Connected\Shipping\Controllers\Backend;
 
 use SCCSP\SendCloud\Connected\Shipping\Services\SCCSP_Config_Service;
 use SCCSP\SendCloud\Connected\Shipping\Services\SCCSP_Connect_Service;
+use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Ajax_Security;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Response;
 
 if (!defined('ABSPATH')) {
@@ -32,6 +33,8 @@ class SCCSP_Connect_Controller {
 	 * Enables WooCommerce API
 	 */
 	public function generate_redirect_url() {
+		SCCSP_Ajax_Security::verify();
+
 		try {
 			$redirect_url = $this->connect_service->get_redirect_url();
 		} catch ( \Exception $exception ) {
@@ -45,6 +48,8 @@ class SCCSP_Connect_Controller {
 	 * Check if integration is connected
 	 */
 	public function check_status() {
+		SCCSP_Ajax_Security::verify();
+
 		$integration_id = $this->config_service->get_integration_id();
 		if ( $integration_id ) {
 			SCCSP_Response::json( array( 'is_connected' => true ) );

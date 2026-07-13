@@ -57,6 +57,7 @@ class ComposerStaticInit799da1d7fc2f83b97f37781f90812d9d
         'SCCSP\\SendCloud\\Connected\\Shipping\\Services\\SCCSP_Config_Service' => __DIR__ . '/../..' . '/includes/Services/class-config-service.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Services\\SCCSP_Connect_Service' => __DIR__ . '/../..' . '/includes/Services/class-connect-service.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Services\\SCCSP_Webhook_Service' => __DIR__ . '/../..' . '/includes/Services/class-webhook-service.php',
+        'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Ajax_Security' => __DIR__ . '/../..' . '/includes/Utility/class-ajax-security.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Auth_Code_Generator' => __DIR__ . '/../..' . '/includes/Utility/class-auth-code-generator.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Base64_Url_Encoder' => __DIR__ . '/../..' . '/includes/Utility/class-base64-url-encoder.php',
         'SCCSP\\SendCloud\\Connected\\Shipping\\Utility\\SCCSP_Database' => __DIR__ . '/../..' . '/includes/Utility/class-database.php',

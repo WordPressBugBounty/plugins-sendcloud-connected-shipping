@@ -4,6 +4,7 @@ namespace SCCSP\SendCloud\Connected\Shipping\Controllers\Backend;
 
 use SCCSP\SendCloud\Connected\Shipping\SCCSP_Sendcloud;
 use SCCSP\SendCloud\Connected\Shipping\Services\SCCSP_Config_Service;
+use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Ajax_Security;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_View;
 
 if (!defined('ABSPATH')) {
@@ -37,6 +38,15 @@ class SCCSP_View_Controller {
             array( 'jquery' ),
             SCCSP_Sendcloud::VERSION,
             true );
+
+        wp_localize_script(
+            'sendcloud-v2-js-page',
+            'sccspAjax',
+            array(
+                'nonceField' => SCCSP_Ajax_Security::NONCE_FIELD,
+                'nonce'      => wp_create_nonce( SCCSP_Ajax_Security::NONCE_ACTION ),
+            )
+        );
 
         wp_enqueue_style(
             'sendcloud-v2-google-fonts',

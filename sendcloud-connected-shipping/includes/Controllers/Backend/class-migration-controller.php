@@ -3,6 +3,7 @@
 namespace SCCSP\SendCloud\Connected\Shipping\Controllers\Backend;
 
 use SCCSP\SendCloud\Connected\Shipping\ServicePoint\Shipping\Service_Point_Free_Shipping_Method;
+use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Ajax_Security;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Response;
 use WC_Shipping_Zone;
 use WC_Shipping_Zones;
@@ -43,6 +44,8 @@ class SCCSP_Migration_Controller
 
     public function migrate_service_points()
     {
+        SCCSP_Ajax_Security::verify();
+
         try {
             $zones = $this->shipping_zone_utility->get_shipping_zones();
 
@@ -156,6 +159,8 @@ class SCCSP_Migration_Controller
 
     public function check_migration_status()
     {
+        SCCSP_Ajax_Security::verify();
+
         $migration_required = $this->config_service->is_migration_required();
         $integration_id = $this->config_service->get_integration_id();
         $migration_completed = $this->config_service->is_migration_completed();

@@ -20,6 +20,26 @@ class SCCSP_OAuth_Connect_Controller extends SCCSP_Base_Controller {
 	const SCOPE = 'api';
 
 	/**
+	 * Capability required to initiate a connection to Sendcloud.
+	 */
+	const CAPABILITY = 'manage_woocommerce';
+
+	/**
+	 * Nonce action guarding the (admin initiated) connect flow.
+	 */
+	const NONCE_ACTION = 'sccsp_oauth_connect';
+
+	/**
+	 * Request parameter carrying the connect nonce.
+	 */
+	const NONCE_PARAM = 'sccsp_state';
+
+	/**
+	 * @var string[]
+	 */
+	protected $allowed_actions = array( 'init' );
+
+	/**
 	 * @var SCCSP_Auth_Service
 	 */
 	private $auth_service;
@@ -37,6 +57,7 @@ class SCCSP_OAuth_Connect_Controller extends SCCSP_Base_Controller {
 	 */
 	public function init() {
 		try {
+			$this->authorize_request();
 			$this->validate_data();
 
 			$code = $this->auth_service->generate_authorization_code();
@@ -58,6 +79,22 @@ class SCCSP_OAuth_Connect_Controller extends SCCSP_Base_Controller {
 			), 400 );
 		}
 
+	}
+
+	/**
+	 * Ensures the connect flow was initiated by an authorized store manager.
+     *
+	 * @return void
+	 */
+	private function authorize_request() {
+		if ( ! is_user_logged_in() || ! current_user_can( self::CAPABILITY ) ) {
+			$this->return_json( array( 'error' => 'Insufficient permissions.' ), 403 );
+		}
+
+		$nonce = $this->get_param( self::NONCE_PARAM );
+		if ( ! $nonce || ! wp_verify_nonce( $nonce, self::NONCE_ACTION ) ) {
+			$this->return_json( array( 'error' => 'Invalid or missing security token.' ), 403 );
+		}
 	}
 
 	/**

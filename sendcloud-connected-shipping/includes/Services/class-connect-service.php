@@ -3,6 +3,7 @@
 namespace SCCSP\SendCloud\Connected\Shipping\Services;
 
 use Exception;
+use SCCSP\SendCloud\Connected\Shipping\Controllers\Frontend\SCCSP_OAuth_Connect_Controller;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Http_Client;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Logger;
 use SCCSP\SendCloud\Connected\Shipping\Utility\SCCSP_Shop_Helper;
@@ -41,7 +42,11 @@ class SCCSP_Connect_Service {
 
 		SCCSP_Logger::info( 'Connecting to Sendcloud.' );
 
-		$oauth_connect_url = SCCSP_Shop_Helper::get_controller_url( 'SCCSP_OAuth_Connect', 'init' );
+		$oauth_connect_url = SCCSP_Shop_Helper::get_controller_url(
+			'SCCSP_OAuth_Connect',
+			'init',
+			array( SCCSP_OAuth_Connect_Controller::NONCE_PARAM => wp_create_nonce( SCCSP_OAuth_Connect_Controller::NONCE_ACTION ) )
+		);
 
 		return sprintf( '%s/shops/woocommerce_v2/redirect/auth/connect?oauth_connect_url=%s', $this->config_service->get_panel_url(),
 			urlencode( $oauth_connect_url ) );

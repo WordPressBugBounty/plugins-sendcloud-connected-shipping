@@ -9,6 +9,13 @@ if (!defined('ABSPATH')) {
 class SCCSP_Base_Controller {
 
 	/**
+	 * Actions that may be dispatched via the `action` request parameter.
+	 *
+	 * @var string[]
+	 */
+	protected $allowed_actions = [];
+
+	/**
 	 * @return void
 	 */
 	public function index() {
@@ -40,7 +47,7 @@ class SCCSP_Base_Controller {
 		}
 
 		if ( $action ) {
-			if ( method_exists( $this, $action ) ) {
+			if ( in_array( $action, $this->allowed_actions, true ) && method_exists( $this, $action ) ) {
 				$this->$action();
 			} else {
 				$this->return_json( array( 'error' => "Method $action does not exist!" ), 404 );
