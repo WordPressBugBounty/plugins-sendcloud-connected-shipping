@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-07-28 - version 1.0.33 =
+* Fix for wp_postmeta table pollution
+
 = 2026-07-03 - version 1.0.32 =
 * Prevent broken access control in admin AJAX endpoints
 

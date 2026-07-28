@@ -67,7 +67,8 @@ class SCCSP_Product_Handler {
 
         if ($hash !== $hashBefore) {
             $order_ids = $this->order_repository->get_orders_by_product_id( $product_id );
-            add_post_meta($product_id, "productUpdateHash", $hash);
+            $this->delete_duplicated_post_meta( $product_id );
+            update_post_meta($product_id, "productUpdateHash", $hash);
 
             if (!$order_ids) {
                 return;
@@ -78,6 +79,22 @@ class SCCSP_Product_Handler {
                 implode(", ", $order_ids),
                 $product_id
             ));
+        }
+    }
+
+    /**
+     * This method is needed to fix SCLG-3945 for affected users
+     * In time it can be removed
+     *
+     * @param $product_id
+     * @return void
+     */
+    private function delete_duplicated_post_meta( $product_id )
+    {
+        $post_meta_data = get_post_meta( $product_id, "productUpdateHash" );
+
+        if ( count($post_meta_data) > 1) {
+            delete_post_meta($product_id, "productUpdateHash");
         }
     }
 
