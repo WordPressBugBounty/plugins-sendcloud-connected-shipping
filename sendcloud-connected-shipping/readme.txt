@@ -1,61 +1,54 @@
-=== Sendcloud Shipping ===
-Version: 1.0.33
+=== Sendcloud for WooCommerce: Labels, Tracking & Returns ===
+Version: 1.0.34
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 7.0
-Stable tag: 1.0.33
+Stable tag: 1.0.34
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
 
-SendCloud helps to grow your online store by optimizing the shipping process.
-Shipping packages has never been that easy!
+Fast, automated shipping for WooCommerce: label creation, branded tracking & returns, all in one place.
 
 == Description ==
 
 [youtube https://www.youtube.com/watch?v=0GUV5W0bNi0 ]
 
-= Fast, automated shipping for WooCommerce: labels, tracking & returns in one platform. =
+= Fast, automated shipping for WooCommerce: label creation, branded tracking & returns, all in one place. =
 
-Grow your business with the Sendcloud x WooCommerce integration. Connect your WooCommerce store with Sendcloud in seconds and automate your shipping workflow — from checkout to returns — all from one powerful platform. Join 25,000+ e-commerce businesses that grow with Sendcloud.
+Join 30,000+ ecommerce businesses by connecting your WooCommerce store to Sendcloud in minutes to automate shipping from checkout to returns, all from one platform. Automatically print labels, offer branded tracking and a self-service returns portal, and give customers delivery choices - from home, pickup point, same-day, or next-day, based on your carrier set-up.
 
-= Connect your WooCommerce store in seconds and streamline your entire fulfillment workflow in one platform. =
+= Features =
 
-🛠 Set up in seconds: no code needed
+* Quick, code-free set-up
+* Choose from 170+ carriers on Sendcloud rates, or add your own contracts
+* Customized delivery experience: home delivery, pickup points, same day, or next day, based on your carrier set-up
+* Branded tracking emails, SMS and WhatsApp
+* Branded return portal
+* Print labels, sync orders, and manage returns in one dashboard
 
-🚚 160+ carriers, including DHL, UPS, Royal Mail & more
+= Why WooCommerce shops ship with Sendcloud: =
 
-📍 Customized delivery experience — let customers choose home delivery, pickup points, same-day, or next-day
+* Cut manual shipping work as you grow: Set shipping rules to auto-select the right carrier and method, reducing manual work and errors as order volume increases.
 
-📦 Print labels, sync orders, manage returns — all in one place
+* Pick and pack faster: Speed up order processing with Pack & Go, so your team ships more orders in less time.
 
-📬 Branded tracking emails & SMS notifications
+* Turn post-purchase into a retention channel: A branded tracking page and returns portal keep customers engaged with your brand, not the carrier's, through delivery and returns.
 
-🔁 Easy, branded return portal
+* Bring delivery into the tools your team already uses: Integrate with Gorgias, Klaviyo, and other CRM and CS tools to surface delivery updates where support and marketing already work.
 
-📊 Track shipping and returns data in one dashboard
-
-= Why WooCommerce merchants choose Sendcloud: =
-
-* Automate your shipping process: Go beyond label printing — create powerful automations to reduce errors and scale faster.
-
-* Pick and pack more orders in less time: Minimize costly returns by ensuring the right order gets delivered every time.
-
-* Deliver the best post-purchase experience: Give your customers proactive tracking updates and a branded, hassle-free return portal.
-
-* One platform, full control: Everything you need to run your e-commerce shipping — built to integrate with your existing WooCommerce stack.
+* Get set up and supported from day one: Code-free onboarding backed by dedicated support, so you're shipping within minutes, not days.
 
 = Supported carriers =
-DHL, DHL Express, DPD, UPS, FedEx, Hermes, Budbee, GLS, Royal Mail, PostNL, Bpost, SEUR, Correos, Correos Express, Colissimo, Mondial Relay, Colis Prive, Lettre Suivie, Chronopost, Deutsche Post, Trunkrs, Post Italiane, MRW, BRT, Cycloon, Delivengo, Parcelforce, and many more! We’re continuously integrating new carriers, so stay tuned for the latest updates and never miss out on any developments.
+DHL, DHL Express, UPS, FedEx, DPD, GLS, Royal Mail, PostNL, PostNord, Colissimo, Correos, Poste Italiane, Bpost, InPost, and 170+ more carriers across Europe.
 
 = 3rd Party Services =
-Our plugin connects to a SendCloud API to synchronize order information. It synchronizes order information every time a new order is created in WooCommerce, or the sync button is clicked on the [Sendcloud panel page](https://panel.sendcloud.sc).
-This service is provided by “Sendcloud”.
-
+Our plugin connects to a Sendcloud API and syncs order information in real time.
 Please find the links to Terms of service and privacy policy for Sendcloud on following websites:
+
 • [Terms of service](https://www.sendcloud.com/terms-conditions/)
 • [Privacy Policy](https://www.sendcloud.com/privacy-policy)
 
@@ -103,7 +96,10 @@ Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346
 
 == Changelog ==
 
-= 2026-07-28 - version 1.0.33 =
+= version 1.0.34 =
+* Update README
+
+= 1.0.33 =
 * Fix for wp_postmeta table pollution
 
 = 1.0.32 =
