@@ -136,7 +136,7 @@ if (!defined('ABSPATH')) {
                 ?>:
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php echo _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/englishwoocommm1229983834.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php echo _e( 'https://schc.io/WooCommerce/englishwoocommm1229983834.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of EAN Attribute', 'sendcloud-connected-shipping' ); ?>">
                 </div>
             </li>
@@ -155,7 +155,7 @@ if (!defined('ABSPATH')) {
                 ?>:
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php echo _e( 'https://www.sendcloud.com/wp-content/help-center-images/ENV2inventory22.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php echo _e( 'https://schc.io/ENV2inventory22.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of EAN Attribute', 'sendcloud-connected-shipping' ); ?>">
                 </div>
                 <hr/>
@@ -188,7 +188,7 @@ if (!defined('ABSPATH')) {
                     </span>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN5.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/WCSPEN5.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of HS Code and Country Attribute', 'sendcloud-connected-shipping' ); ?>">
                 </div>
             </li>

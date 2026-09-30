@@ -225,7 +225,7 @@ if (!defined('ABSPATH')) {
                             ?>
                             <div class="sc-step-image">
                                 <img class="sc-screenshot-thumb"
-                                     src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/webhookfeedback_testAPIwebhook.png', 'sendcloud-connected-shipping' ); ?>"
+                                     src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/webhookfeedback_testAPIwebhook.png', 'sendcloud-connected-shipping' ); ?>"
                                      alt="<?php esc_attr_e( 'Screenshot of Test Webhook', 'sendcloud-connected-shipping' ); ?>">
                             </div>
                             <hr/>
@@ -320,7 +320,7 @@ if (!defined('ABSPATH')) {
                                          is created', 'sendcloud-connected-shipping'); ?>
                                     <div class="sc-step-image">
                                         <img class="sc-screenshot-thumb"
-                                             src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/feedbacktothewebshop.png', 'sendcloud-connected-shipping' ); ?>"
+                                             src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/feedbacktothewebshop.png', 'sendcloud-connected-shipping' ); ?>"
                                              alt="<?php esc_attr_e( 'Screenshot of Test Webhook', 'sendcloud-connected-shipping' ); ?>">
                                     </div>
                                     <?php esc_html_e('The default selection is for the parcels\' status to be set to "sent" once the label is created', 'sendcloud-connected-shipping'); ?>
@@ -419,7 +419,7 @@ if (!defined('ABSPATH')) {
                             ?>
                             <div class="sc-step-image">
                                 <img class="sc-screenshot-thumb"
-                                     src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/orderfiltering.png', 'sendcloud-connected-shipping' ); ?>"
+                                     src="<?php _e( 'https://schc.io/WooCommerce/orderfiltering.png', 'sendcloud-connected-shipping' ); ?>"
                                      alt="<?php esc_attr_e( 'Screenshot of Order Status Filter', 'sendcloud-connected-shipping' ); ?>">
                             </div>
                             <hr/>
@@ -541,7 +541,7 @@ if (!defined('ABSPATH')) {
                             </div>
                             <div class="sc-step-image">
                                 <img class="sc-screenshot-thumb"
-                                     src="<?php echo _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/importparcelweight.png', 'sendcloud-connected-shipping' ); ?>"
+                                     src="<?php echo _e( 'https://schc.io/WooCommerce/setup_checklist/importparcelweight.png', 'sendcloud-connected-shipping' ); ?>"
                                      alt="<?php esc_attr_e( 'Screenshot of Import Status Weight', 'sendcloud-connected-shipping' ); ?>">
                             </div>
                             <hr/>

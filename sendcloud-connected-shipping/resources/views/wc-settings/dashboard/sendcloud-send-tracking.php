@@ -71,7 +71,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/confi.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/confi.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Wordpress Integration', 'sendcloud-connected-shipping' ); ?>">
                 </div>
                 <hr/>
@@ -89,7 +89,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/sendtrackingupdates.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/sendtrackingupdates.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Update Tracking', 'sendcloud-connected-shipping' ); ?>">
                 </div>
             </li>

@@ -233,7 +233,7 @@ if (!defined('ABSPATH')) {
 
         <div class="sc-step-image">
             <img class="sc-screenshot-thumb"
-                 src="<?php echo _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/Checkout%20method_shipping%20rule.png', 'sendcloud-connected-shipping' ) ?>"
+                 src="<?php echo _e( 'https://schc.io/WooCommerce/setup_checklist/Checkout%20method_shipping%20rule.png', 'sendcloud-connected-shipping' ) ?>"
                  alt="<?php esc_attr_e( 'Screenshot of WooCommerce Shipping Settings', 'sendcloud-connected-shipping' ); ?>">
         </div>
 

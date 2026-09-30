@@ -1180,80 +1180,80 @@ msgstr ""
 msgid "Optional"
 msgstr ""
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/unstampedletter.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/unstampedletter_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/unstampedletter.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/unstampedletter_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wccompletedstatus.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wccompletedstatus_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/wccompletedstatus.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wccompletedstatus_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wcordernotes.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcordernotes_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/wcordernotes.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcordernotes_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/configurationfeedbacktowebshop.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/configurationfeedbacktowebshop_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/configurationfeedbacktowebshop.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/configurationfeedbacktowebshop_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wcshopmanagerrole.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcshopmanagerrole_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/wcshopmanagerrole.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcshopmanagerrole_FR.png"
 
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN1.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcaddzone_FR.png"
+msgid "https://schc.io/WooCommerce/WCSPEN1.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcaddzone_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/setup_shippingmethod.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcsetup_shippingmethod_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/setup_shippingmethod.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcsetup_shippingmethod_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/Checkout%20method_shipping%20rule.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/checkoutmethod_shippingrule_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/Checkout%20method_shipping%20rule.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/checkoutmethod_shippingrule_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/confi.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/confi_FR.png"
+msgid "https://schc.io/WooCommerce/confi.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/confi_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/EN%20service%20points%20WC%20in%20panel.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/servicepointsinpanel_FR.png"
+msgid "https://schc.io/WooCommerce/EN%20service%20points%20WC%20in%20panel.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/servicepointsinpanel_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/servicepoint_delivery[Sendcloud].png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/servicepoint_delivery[Sendcloud]_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/servicepoint_delivery[Sendcloud].png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/servicepoint_delivery[Sendcloud]_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/setupservicepointdelivery.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcsetupservicepointdelivery_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/setupservicepointdelivery.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcsetupservicepointdelivery_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/englishwoocommm1229983834.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wceanbysendcloud_FR.png"
+msgid "https://schc.io/WooCommerce/englishwoocommm1229983834.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wceanbysendcloud_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/ENV2inventory22.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcean_FR.png"
+msgid "https://schc.io/ENV2inventory22.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcean_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN5.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wchscodecountryoforiginbysc_FR.png"
+msgid "https://schc.io/WooCommerce/WCSPEN5.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wchscodecountryoforiginbysc_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/feedbacktothewebshop.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/feedbacktothewebshop_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/feedbacktothewebshop.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/feedbacktothewebshop_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/orderfiltering.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/orderfiltering_FR.png"
+msgid "https://schc.io/WooCommerce/orderfiltering.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/orderfiltering_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/importparcelweight.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/importparcelweight_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/importparcelweight.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/importparcelweight_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/sendtrackingupdates.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/sendtrackingupdates_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/sendtrackingupdates.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/sendtrackingupdates_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/disconnectV1.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/disconnectV1_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/disconnectV1.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/disconnectV1_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/wcdeactivateanddelete.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcdeactivateanddelete_FR.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/wcdeactivateanddelete.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcdeactivateanddelete_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/MigrationSPWC22.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcmigrationsp_FR.png"
+msgid "https://schc.io/WooCommerce/MigrationSPWC22.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcmigrationsp_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/DisMigraSPWC.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcenablemigrasp_FR.png"
+msgid "https://schc.io/WooCommerce/DisMigraSPWC.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcenablemigrasp_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN2.png"
-msgstr "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/FR/wcaddshippingmethod_FR.png"
+msgid "https://schc.io/WooCommerce/WCSPEN2.png"
+msgstr "https://schc.io/WooCommerce/setup_checklist/FR/wcaddshippingmethod_FR.png"
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/EN%20parcel%20dimensions%20check.png"
+msgid "https://schc.io/WooCommerce/EN%20parcel%20dimensions%20check.png"
 msgstr ""
 
 msgid "<strong>Note:</strong> If multiple carriers are activated while the dimension checker is enabled, you’ll see this error: <i>"One of the items in your order is too large to be shipped to a service point. Search is limited to your selected country."</i> This is why we recommend using dimension checking only for PostNL and DHL service points."
@@ -1268,7 +1268,7 @@ msgstr "Le sélecteur de point relais éliminera les transporteurs qui ne peuven
 msgid "Please bear in mind that there is no advance packing logic behind this — we simply check if all the given products in an order are within the maximum dimensions of the carrier."
 msgstr "Il est important de savoir qu'il n'y a pas de prise en compte de l'emballage derrière cela. Nous vérifions simplement si tous les produits d'une commande respectent les dimensions maximales des transporteurs."
 
-msgid "https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/webhookfeedback_testAPIwebhook.png"
+msgid "https://schc.io/WooCommerce/setup_checklist/webhookfeedback_testAPIwebhook.png"
 msgstr ""
 
 msgid "https://support.sendcloud.com/hc/en-us/articles/360046514071-How-to-get-support-from-Sendcloud"

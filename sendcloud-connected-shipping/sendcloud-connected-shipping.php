@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Sendcloud for WooCommerce: Labels, Tracking & Returns
+ * Plugin Name: Sendcloud for WooCommerce: Automated Shipping, Branded Tracking & Returns
  * Plugin URI: https://wordpress.org/plugins/sendcloud-connected-shipping/
  * Description: Sendcloud plugin.
- * Version: 1.0.34
+ * Version: 1.0.36
  * Woo:
  * Author: Sendcloud B.V.
  * Author URI: https://www.sendcloud.com

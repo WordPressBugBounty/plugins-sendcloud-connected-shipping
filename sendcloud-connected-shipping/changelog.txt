@@ -1,5 +1,11 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-10-01 - version 1.0.36 =
+* Update README
+
+= 2026-09-30 - version 1.0.35 =
+* Fixed missing images in the setup instructions by moving them to a new image host
+
 = 2026-09-29 - version 1.0.34 =
 * Update README
 

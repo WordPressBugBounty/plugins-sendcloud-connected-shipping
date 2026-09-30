@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 
 class SCCSP_Sendcloud {
 
-	const VERSION = '1.0.34';
+	const VERSION = '1.0.36';
 	const INTEGRATION_NAME = 'sendcloudshipping';
 	const BASE_API_URI = 'sendcloudshipping/v2';
 
@@ -256,7 +256,7 @@ class SCCSP_Sendcloud {
 	 */
 	public function create_admin_menu() {
 		$controller      = new SCCSP_View_Controller();
-		$sendcloud_label = esc_html__( 'Sendcloud for WooCommerce: Labels, Tracking & Returns', 'sendcloud-connected-shipping' );
+		$sendcloud_label = esc_html__( 'Sendcloud for WooCommerce: Automated Shipping, Branded Tracking & Returns', 'sendcloud-connected-shipping' );
 		add_submenu_page(
 			'woocommerce',
 			$sendcloud_label,

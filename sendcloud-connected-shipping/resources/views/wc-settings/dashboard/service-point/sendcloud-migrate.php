@@ -148,7 +148,7 @@ if (!defined('ABSPATH')) {
                     </ol>
                     <div class="sc-step-image">
                         <img class="sc-screenshot-thumb"
-                             src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/MigrationSPWC22.png', 'sendcloud-connected-shipping' ); ?>"
+                             src="<?php _e( 'https://schc.io/WooCommerce/MigrationSPWC22.png', 'sendcloud-connected-shipping' ); ?>"
                              alt="<?php esc_attr_e( 'Screenshot of Migrated Shipping', 'sendcloud-connected-shipping' ); ?>">
                     </div>
                     <hr/>
@@ -159,7 +159,7 @@ if (!defined('ABSPATH')) {
                         new methods</strong> and <strong>disable the old ones.</strong>
                     <div class="sc-step-image">
                         <img class="sc-screenshot-thumb"
-                             src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/DisMigraSPWC.png', 'sendcloud-connected-shipping' ); ?>"
+                             src="<?php _e( 'https://schc.io/WooCommerce/DisMigraSPWC.png', 'sendcloud-connected-shipping' ); ?>"
                              alt="<?php esc_attr_e( 'Screenshot of Migrated Shipping', 'sendcloud-connected-shipping' ); ?>">                    </div>
                 </li>
             </ol>

@@ -69,7 +69,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/confi.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/confi.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Wordpress Integration', 'sendcloud-connected-shipping' ); ?>">
                 </div>
                 <hr/>
@@ -91,7 +91,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/EN%20service%20points%20WC%20in%20panel.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/EN%20service%20points%20WC%20in%20panel.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Service Points', 'sendcloud-connected-shipping' ); ?>">
                 </div>
                 <hr/>
@@ -163,7 +163,7 @@ if (!defined('ABSPATH')) {
                             </div>
                             <div class="sc-step-image">
                                 <img class="sc-screenshot-thumb"
-                                     src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/EN%20parcel%20dimensions%20check.png', 'sendcloud-connected-shipping' ); ?>"
+                                     src="<?php _e( 'https://schc.io/WooCommerce/EN%20parcel%20dimensions%20check.png', 'sendcloud-connected-shipping' ); ?>"
                                      alt="<?php esc_attr_e( 'Screenshot of Service Point Dimensions', 'sendcloud-connected-shipping' ); ?>">
                             </div>
                             <hr/>
@@ -173,7 +173,7 @@ if (!defined('ABSPATH')) {
                                     'sendcloud-connected-shipping' ); ?>
                             <div class="sc-step-image">
                                 <img class="sc-screenshot-thumb"
-                                     src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN5.png', 'sendcloud-connected-shipping' ); ?>"
+                                     src="<?php _e( 'https://schc.io/WooCommerce/WCSPEN5.png', 'sendcloud-connected-shipping' ); ?>"
                                      alt="<?php esc_attr_e( 'Screenshot of Product Dimensions', 'sendcloud-connected-shipping' ); ?>">
                             </div>
                             <?php _e('The service point picker will filter out carriers that cannot handle products of that given size.',
@@ -212,7 +212,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                       <img class="sc-screenshot-thumb"
-                           src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN1.png', 'sendcloud-connected-shipping' ); ?>"
+                           src="<?php _e( 'https://schc.io/WooCommerce/WCSPEN1.png', 'sendcloud-connected-shipping' ); ?>"
                            alt="<?php esc_attr_e( 'Screenshot of WooCommerce Shipping Settings', 'sendcloud-connected-shipping' ); ?>">
                 </div>
                 <hr/>
@@ -228,7 +228,7 @@ if (!defined('ABSPATH')) {
 
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/WCSPEN2.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/WCSPEN2.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of WooCommerce Shipping Zone', 'sendcloud-connected-shipping' ); ?>">
                 </div>
                 <hr/>
@@ -248,7 +248,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/servicepoint_delivery[Sendcloud].png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/servicepoint_delivery[Sendcloud].png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Service Point Delivery Method', 'sendcloud-connected-shipping' ); ?>">                </div>
                 <hr/>
             </li>
@@ -282,7 +282,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://www.sendcloud.com/wp-content/help-center-images/WooCommerce/setup_checklist/setupservicepointdelivery.png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/setupservicepointdelivery.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Service Point Delivery Method', 'sendcloud-connected-shipping' ); ?>">
                 </div>
             </li>
