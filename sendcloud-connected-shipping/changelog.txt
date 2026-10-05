@@ -1,5 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
 
+= 2026-10-05 - version 1.0.37 =
+* Fixed connecting multiple sub-sites in a WordPress Multisite network
+
 = 2026-10-01 - version 1.0.36 =
 * Update README
 

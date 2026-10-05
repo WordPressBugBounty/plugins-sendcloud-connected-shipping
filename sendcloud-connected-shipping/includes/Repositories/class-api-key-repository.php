@@ -192,7 +192,7 @@ class SCCSP_Api_Key_Repository {
 		if (!$user) {
             $password = wp_generate_password();
 			// User does not exist, create new admin user
-			$user_id = wp_create_user($username, $password, self::WP_USER_EMAIL);
+			$user_id = wp_create_user($username, $password, $this->get_user_email($username));
 
 			if (is_wp_error($user_id)) {
                 throw new \Exception( 'Error creating user: ' . esc_html( $user_id->get_error_message() ) );
@@ -206,6 +206,28 @@ class SCCSP_Api_Key_Repository {
 		}
 
         return $user_id;
+    }
+
+    /**
+     * Generates a unique user email by plus-addressing the user name.
+     * The users table is shared across a multisite network, so a fixed email
+     * would make user creation fail on every sub-site after the first one.
+     *
+     * @param string $user_name
+     *
+     * @return string
+     */
+    private function get_user_email($user_name)
+    {
+        list($local, $domain) = explode('@', self::WP_USER_EMAIL);
+        $email = $local . '+' . $user_name . '@' . $domain;
+
+        // Fall back to a random suffix if the address is already taken (e.g. an orphaned user).
+        while (email_exists($email)) {
+            $email = $local . '+' . $user_name . '_' . wp_generate_password(6, false) . '@' . $domain;
+        }
+
+        return $email;
     }
 
     /**
