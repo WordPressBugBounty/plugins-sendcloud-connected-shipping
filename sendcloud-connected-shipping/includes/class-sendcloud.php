@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) {
 
 class SCCSP_Sendcloud {
 
-	const VERSION = '1.0.37';
+	const VERSION = '1.0.38';
 	const INTEGRATION_NAME = 'sendcloudshipping';
 	const BASE_API_URI = 'sendcloudshipping/v2';
 
@@ -260,7 +260,7 @@ class SCCSP_Sendcloud {
 		add_submenu_page(
 			'woocommerce',
 			$sendcloud_label,
-			$sendcloud_label,
+            esc_html__( 'Sendcloud Shipping', 'sendcloud-connected-shipping' ),
 			'manage_woocommerce',
 			'sendcloud-connected-shipping',
 			array( $controller, 'render' )
