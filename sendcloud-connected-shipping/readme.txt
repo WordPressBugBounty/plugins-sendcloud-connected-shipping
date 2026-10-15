@@ -1,12 +1,12 @@
 === Sendcloud for WooCommerce: Automated Shipping, Branded Tracking & Returns ===
-Version: 1.0.38
+Version: 1.0.39
 Developer: SendCloud Global B.V.
 Developer URI: http://sendcloud.com
 Tags: shipping, shipping rates, order tracking, service points, woocommerce
 Requires at least: 4.9
 Requires PHP: 7.0
 Tested up to: 7.0
-Stable tag: 1.0.38
+Stable tag: 1.0.39
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Contributors: sendcloudbv
@@ -95,6 +95,8 @@ Visit our [Help Center](https://support.sendcloud.com/hc/en-us/articles/35936346
 8. More than 2k 5-star reviews | Sendcloud
 
 == Changelog ==
+= 1.0.39 =
+* Fixed a fatal error when activating the plugin on older WooCommerce versions that don't include the Store API update callback
 
 = 1.0.38 =
 * Shortened the plugin menu label in the WordPress admin sidebar to "Sendcloud Shipping"

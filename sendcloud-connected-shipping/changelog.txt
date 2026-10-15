@@ -1,6 +1,8 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
+= 2026-10-15 - version 1.0.39 =
+* Fixed a fatal error when activating the plugin on older WooCommerce versions that don't include the Store API update callback
 
-= 2026-10-09 - version 1.0.38 =
+= 2026-10-13 - version 1.0.38 =
 * Shortened the plugin menu label in the WordPress admin sidebar to "Sendcloud Shipping"
 
 = 2026-10-05 - version 1.0.37 =

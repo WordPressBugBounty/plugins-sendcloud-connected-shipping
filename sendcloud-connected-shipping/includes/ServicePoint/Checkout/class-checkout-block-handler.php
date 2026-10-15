@@ -52,6 +52,11 @@ class SCCSP_Checkout_Block_Handler extends SCCSP_Checkout_Handler {
         add_action(
             'woocommerce_blocks_loaded',
             function() {
+                // Older WooCommerce / Blocks versions do not provide this function.
+                if ( ! function_exists( 'woocommerce_store_api_register_update_callback' ) ) {
+                    return;
+                }
+
                 woocommerce_store_api_register_update_callback( [
                     'namespace' => 'sendcloud-connected-shipping-sp-block',
                     'callback'  => function ( $data ) {
