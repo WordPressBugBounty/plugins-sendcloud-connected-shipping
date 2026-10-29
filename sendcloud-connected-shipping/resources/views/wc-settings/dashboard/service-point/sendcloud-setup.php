@@ -248,7 +248,7 @@ if (!defined('ABSPATH')) {
                 ?>
                 <div class="sc-step-image">
                     <img class="sc-screenshot-thumb"
-                         src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/servicepoint_delivery[Sendcloud].png', 'sendcloud-connected-shipping' ); ?>"
+                         src="<?php _e( 'https://schc.io/WooCommerce/setup_checklist/servicepoint_delivery%5BSendcloud%5D.png', 'sendcloud-connected-shipping' ); ?>"
                          alt="<?php esc_attr_e( 'Screenshot of Service Point Delivery Method', 'sendcloud-connected-shipping' ); ?>">                </div>
                 <hr/>
             </li>

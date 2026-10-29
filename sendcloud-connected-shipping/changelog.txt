@@ -1,4 +1,7 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
+= 2026-10-29 - version 1.0.40 =
+* Add Danish and Swedish translates
+
 = 2026-10-15 - version 1.0.39 =
 * Fixed a fatal error when activating the plugin on older WooCommerce versions that don't include the Store API update callback
 
