@@ -4,7 +4,6 @@ namespace SCCSP\SendCloud\Connected\Shipping\Utility;
 
 use SCCSP\SendCloud\Connected\Shipping\Database\SCCSP_Migrator;
 use SCCSP\SendCloud\Connected\Shipping\SCCSP_Sendcloud;
-use WP_Site;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
@@ -23,9 +22,12 @@ class SCCSP_Database
     }
 
     /**
-     * Performs database update.
+     * Updates the current site's schema when needed.
      *
-     * @param $is_multisite
+     * Each site is upgraded when it loads the plugin. Traversing the network here
+     * repeats every site's version check on every frontend, admin and cron request.
+     *
+     * @param bool $is_multisite Whether to retain multisite migration error logging.
      *
      */
     public function update( $is_multisite ) {
@@ -35,47 +37,16 @@ class SCCSP_Database
             return;
         }
 
-        $this->batch_process_multisite();
-    }
-
-    /**
-     * Batch schema update for multistore setups
-     *
-     * @return void
-     */
-    private function batch_process_multisite()
-    {
-        $batch_size = 100;
-        $offset = 0;
-
-        do {
-            $sites = get_sites( [
-                'fields' => 'ids',
-                'number' => $batch_size,
-                'offset' => $offset,
-            ] );
-
-            foreach ( $sites as $site_id ) {
-
-                switch_to_blog( $site_id );
-
-                try {
-                    $this->do_update();
-
-                } catch (\Throwable $e) {
-                    $message =  sprintf(
-                        'Migration for store ID %d failed: %s',
-                        $site_id,
-                        $e->getMessage()
-                    );
-                    SCCSP_Logger::error( $message );
-                } finally {
-                    restore_current_blog();
-                }
-            }
-
-            $offset += $batch_size;
-        } while (!empty($sites));
+        try {
+            $this->do_update();
+        } catch (\Throwable $e) {
+            $message =  sprintf(
+                'Migration for store ID %d failed: %s',
+                get_current_blog_id(),
+                $e->getMessage()
+            );
+            SCCSP_Logger::error( $message );
+        }
     }
 
     /**

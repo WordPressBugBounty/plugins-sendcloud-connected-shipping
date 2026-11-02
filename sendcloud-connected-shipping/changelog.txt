@@ -1,4 +1,7 @@
 *** WooCommerce Sendcloud | The all-in-one shipping platform Changelog ***
+= 2026-10-30 - version 1.0.41 =
+* Improved multisite performance: the database schema is now checked and migrated only for the current site on plugin load, instead of traversing every site in the network on each request
+
 = 2026-10-29 - version 1.0.40 =
 * Add Danish and Swedish translates
 
